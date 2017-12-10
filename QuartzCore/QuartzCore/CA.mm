@@ -363,3 +363,39 @@ int32_t *CA::Layer::class_state(void *) {
     goto loc_108b30;
     return 0;
 }
+
+int32_t CA::Layer::layout_if_needed(CA::Transaction *transaction) {
+    return 0;
+}
+
+int32_t CA::Layer::thread_flags_(CA::Transaction *transaction) {
+    return 0;
+}
+
+int32_t CA::Layer::invalidate_layout() {
+    rax = *(rdi + 0x80);
+    if (rax == 0x0) goto .l1;
+
+    loc_104c6c:
+    rax = *rax;
+    if (rax == 0x0) goto .l1;
+
+    loc_104c79:
+    rdx = *(int32_t *)(rax + 0x8);
+    if ((rdx & 0xffffff) == 0x1a9) goto loc_104c90;
+
+    loc_104c86:
+    rax = *rax;
+    if (rax != 0x0) goto loc_104c79;
+
+    .l1:
+    return rax;
+
+    loc_104c90:
+    rdi = *(rdi + 0x10);
+    intrinsic_movsd(xmm0, *_CGSizeZero);
+    intrinsic_movsd(xmm1, *_CTFontCopyGraphicsFont);
+    rax = [rdi setSizeRequisition:rdx];
+    return rax;
+}
+

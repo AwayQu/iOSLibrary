@@ -76,4 +76,8 @@
     return;
 }
 
+- (void)init {
+
+}
+
 @end
