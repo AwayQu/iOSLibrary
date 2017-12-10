@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae9dc759-c13c-4693-8704-b77550b4c896" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuartzCore/QuartzCore.xcodeproj/project.xcworkspace/xcuserdata/away.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/iOSLibrary.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuartzCore/QuartzCore.xcodeproj/project.pbxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuartzCore/QuartzCore.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuartzCore/QuartzCore.xcodeproj/xcuserdata/away.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuartzCore/QuartzCore/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuartzCore/QuartzCore/QuartzCore.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuartzCore/QuartzCoreTests/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/QuartzCore/QuartzCoreTests/QuartzCoreTests.m" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/CA.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/CA.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/CALayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/CALayer.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/CATransaction.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/CATransaction.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAAction-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAAnimatableValue-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAAnimation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAAnimationDelegate-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAAnimationGroup.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CABackdropLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CABasicAnimation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CABehavior.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CACGPathCodingProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CACGPathCodingSegment.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CACGPatternCodingProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CACodingCAMLWriterDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CACodingProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAContext.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAContextImpl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CADebuggingArchiverDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CADisplay.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CADisplayAttributes.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CADisplayLink.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CADisplayMode.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CADistanceFieldLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CADynamicsBehavior.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAEAGLLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAEmitterBehavior.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAEmitterCell.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAEmitterLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAFilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAForceField.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAGradientLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAIOSurfaceCodingProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAKeyframeAnimation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CALayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CALayerArray.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CALayerHost.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CALight.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CALinearMaskLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMLParser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMLWriterDelegate-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMatchMoveAnimation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMediaTiming-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMediaTimingFunction.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMediaTimingFunctionBuiltin.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMeshInterpolator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMeshTransform.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAMutableMeshTransform.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAPackage.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAPortalLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAPresentationModifier.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAPresentationModifierGroup.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAPropertyAnimation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAPropertyInfo-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CARenderValue-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CARenderer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAReplicatorLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAScrollLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAShapeLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CASlotProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CASmoothedTextLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CASpring.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CASpringAnimation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAState.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateAddAnimation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateAddElement.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateControllerAnimation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateControllerLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateControllerTransition.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateControllerUndo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateElement.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateRecorder-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateRemoveAnimation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateRemoveElement.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateSetValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateTransition.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAStateTransitionElement.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CASuspendNotification.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CATextLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CATiledLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CATransaction.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CATransactionCompletionItem.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CATransformLayer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CATransition.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAValueFunction.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAWindowServer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CAWindowServerDisplay.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/CDStructures.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/EAGLDrawable-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/LKCGColorCodingProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/LKCGImageCodingProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/LKNSArrayCodingProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/LKNSDictionaryCodingProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/LKNSValueCodingProxy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSAffineTransform-CAAnimatableValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSAffineTransform-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSAffineTransform-CARenderValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSArray-CAAnimatableValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSArray-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSCoder-CACoderAdditions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSCoding-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSCopying-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSDictionary-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSDictionary-CARenderValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSKeyedArchiverDelegate-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSMutableCopying-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSNull-CAActionAdditions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSNull-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSNumber-CAAnimatableValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSNumber-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSNumber-CARenderValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSObject-CAAnimatableValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSObject-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSObject-CARenderValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSObject-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSObject-_CAObjectInternal.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSSecureCoding-Protocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSSet-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSString-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSURL-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSValue-CAAnimatableValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSValue-CAColorMatrixAdditions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSValue-CAMLWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSValue-CAPoint3DAdditions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSValue-CARenderValue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/QuartzCore/class-dump/NSValue-CATransform3DAdditions.h" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Cidr.FilesView" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Cidr.FilesView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="iOSLibrary" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae9dc759-c13c-4693-8704-b77550b4c896" name="Default" comment="" />
+      <created>1512889507082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1512889507082</updated>
+      <workItem from="1512889508324" duration="33000" />
+      <workItem from="1512889800714" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="35000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>

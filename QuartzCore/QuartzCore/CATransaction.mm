@@ -1,4 +1,5 @@
 #include <pthread.h>
+#import "CA.h"
 
 /**
   int pthread_setspecific(pthread_key_t key, const void *value); 
@@ -35,33 +36,33 @@
 @implementation CATransaction
 
 + (void)begin {
-    int current_thread = pthread_getspecific(0x48);
-    if (current_thread == 0x0) {
-            int current_transaction = CA::Transaction::create();
-            if (current_transaction != 0x0) {
-                    CA::Transaction::push(current_transaction);
-            }
-    }
-    else {
-            CA::Transaction::push(current_thread);
+
+    CA::Transaction *transaction = (CA::Transaction *) pthread_getspecific(0x48);
+    if (transaction == 0x0) {
+        transaction = CA::Transaction::create();
+        if (transaction != 0x0) {
+            CA::Transaction::push(transaction);
+        }
+    } else {
+        CA::Transaction::push(transaction);
     }
     return;
 }
 
-+ (void)commit { 
-   CA::Transaction::commit_transaction();
-   return;
++ (void)commit {
+    CA::Transaction::commit_transaction();
+    return;
 }
 
 + (void)flush {
-   CA::Transaction::flush_transaction();
-   return;
+    CA::Transaction::flush_transaction();
+    return;
 }
 
 + (void)lock {
-    rax = CA::Transaction::ensure_compat();
-    rcx = *(int32_t *)(rax + 0x20);
-    *(int32_t *)(rax + 0x20) = rcx + 0x1;
+    CA::Transaction *rax = CA::Transaction::ensure_compat();
+    rcx = *(int32_t *) (rax + 0x20);
+    *(int32_t *) (rax + 0x20) = rcx + 0x1;
     if (rcx == 0x0) {
         os_unfair_lock_lock(*(rax + 0x18));
     }

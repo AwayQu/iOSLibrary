@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DE2E014915D861E51AA3742 /* CATransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EBB6C48971AB09492BD7 /* CATransition.h */; };
+		2DE2E014B0CE250634017A6F /* CAWindowServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EC0B2B4705B624A2BC9A /* CAWindowServer.h */; };
+		2DE2E01A8B782411877BB9FB /* CAEAGLLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E019E505E955CA37B424 /* CAEAGLLayer.h */; };
+		2DE2E02CDF858A75BCC86918 /* CAAnimatableValue-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA0C746BDDA2C9AF5F58 /* CAAnimatableValue-Protocol.h */; };
+		2DE2E02E7624131D394F5899 /* CAAnimationDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E155D8A3585500CE1925 /* CAAnimationDelegate-Protocol.h */; };
+		2DE2E0772057BEF2A9D0F560 /* CADistanceFieldLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EEA69AD24462C40936A8 /* CADistanceFieldLayer.h */; };
+		2DE2E0D1EDF9FB2447F16ADE /* CADynamicsBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E589B0B878A6300EB526 /* CADynamicsBehavior.h */; };
+		2DE2E0D424F663C472830485 /* NSNull-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2ED06D8C1278176C77558 /* NSNull-CAMLWriter.h */; };
+		2DE2E0F3CCEFAF2DC15266CB /* CAMediaTiming-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EB380CEDC6F1B4153797 /* CAMediaTiming-Protocol.h */; };
+		2DE2E0FE4D3CE68A079EE77F /* CACGPathCodingSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E0BE6CF7D1FD867D788A /* CACGPathCodingSegment.h */; };
+		2DE2E1147EDE2365FF03D3FF /* CAEmitterLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E65B2AC4497E34C6A9BE /* CAEmitterLayer.h */; };
+		2DE2E1169E15E0FD40BF689A /* CAStateAddElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E2E309745EA7DF9B3711 /* CAStateAddElement.h */; };
+		2DE2E12662EDB71F5411B800 /* CAPresentationModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E1631EE7CB1F69B6A39A /* CAPresentationModifier.h */; };
+		2DE2E13CD78709E6172439B3 /* CATiledLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E66E288C570ECDBB9B28 /* CATiledLayer.h */; };
+		2DE2E19194A174742B33BB3A /* CADisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E749F301B56ED461F566 /* CADisplayLink.h */; };
+		2DE2E193A57BA9C631F6D008 /* CAContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E95D68509E867952F198 /* CAContext.h */; };
+		2DE2E1AFBD650B92718A14AF /* NSArray-CAAnimatableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EFB271FE4508ADD543E1 /* NSArray-CAAnimatableValue.h */; };
+		2DE2E1B7C7C4FD27EA8404B6 /* NSAffineTransform-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EFF6DF19ECC31CCF561B /* NSAffineTransform-CAMLWriter.h */; };
+		2DE2E1DB580CF5F6CCDAF534 /* LKCGColorCodingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E23FC3EEFBDBEA9A645E /* LKCGColorCodingProxy.h */; };
+		2DE2E1E36BB83261E9A6B7AF /* CAValueFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E6E5F4BC6AB9301ADDC3 /* CAValueFunction.h */; };
+		2DE2E1FF0C99CD00FEA9E95A /* CAIOSurfaceCodingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E0B26B2A5B7E33E73624 /* CAIOSurfaceCodingProxy.h */; };
+		2DE2E209745ACCE171422849 /* CAState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E6DEA62D22434BF35B89 /* CAState.h */; };
+		2DE2E247058BEC6B4F337313 /* NSValue-CAAnimatableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E2B32040F324D5C53352 /* NSValue-CAAnimatableValue.h */; };
+		2DE2E25C5C14CD35C7EE8AD7 /* CAShapeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E5BFF965109007A13126 /* CAShapeLayer.h */; };
+		2DE2E29467FFBD86DF690A67 /* NSAffineTransform-CAAnimatableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E2307435C4558A687028 /* NSAffineTransform-CAAnimatableValue.h */; };
+		2DE2E2BA010D757666C1E0CD /* LKNSValueCodingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EDB3C5CF3C646B6D52D3 /* LKNSValueCodingProxy.h */; };
+		2DE2E30AAEB923A59CCEE62C /* CAStateTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2ECC674D443B044BD3CBB /* CAStateTransition.h */; };
+		2DE2E3488563D679FAF94633 /* NSNull-CAActionAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EBFDEF4CF76E0393A7F6 /* NSNull-CAActionAdditions.h */; };
+		2DE2E3550D78C1D7FE9A066A /* NSValue-CARenderValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E6DA8DD75C87A2CAEB42 /* NSValue-CARenderValue.h */; };
+		2DE2E35E55317473268C3B44 /* CAContextImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E025C7EFE9EF07DA146C /* CAContextImpl.h */; };
+		2DE2E35FFBB2AD64BA8F93B8 /* CAPresentationModifierGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E75316D3806E64E41457 /* CAPresentationModifierGroup.h */; };
+		2DE2E3682574E4B4248224E0 /* CASpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E9A491073233DC28F794 /* CASpringAnimation.h */; };
+		2DE2E36A0A9AE0B6653C5B67 /* CAPropertyInfo-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E163CFFF1FD9293945AD /* CAPropertyInfo-Protocol.h */; };
+		2DE2E36B4F99E3BD7DB82A91 /* CAGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EEEA49D4A124E4CB9A26 /* CAGradientLayer.h */; };
+		2DE2E3C51B0F1F97C491BCD1 /* CALayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E5A4F992BB2435169DAA /* CALayer.h */; };
+		2DE2E3CF52ECCCF50BCAB113 /* CAStateRecorder-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E673B3EB3BBFF56CE785 /* CAStateRecorder-Protocol.h */; };
+		2DE2E42B2B90F7F981B16DE9 /* CDStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E5561A7E50F1CB8724AB /* CDStructures.h */; };
+		2DE2E430D25A774B9496738A /* NSSet-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E1846334CA40E364EB0A /* NSSet-CAMLWriter.h */; };
+		2DE2E45913B38EDA81154025 /* CAWindowServerDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2ED01EF7996BAA5EE2185 /* CAWindowServerDisplay.h */; };
+		2DE2E463E1F5D28F260CA21B /* NSString-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EDE18E7C37F5ACDB8CCC /* NSString-CAMLWriter.h */; };
+		2DE2E4886869C4A52FB840C7 /* CATransformLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E7F779F23F8A72AB2C3D /* CATransformLayer.h */; };
+		2DE2E489ECC3C46D84CFAD69 /* Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E45335F93C552A5DB2A3 /* Test.mm */; };
+		2DE2E4B04C0C9EF7E793E98C /* CAPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA30D161B284C8124D71 /* CAPropertyAnimation.h */; };
+		2DE2E4D5DE033E586B2BC228 /* CAStateSetValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E5768103CC45A7F4FE5B /* CAStateSetValue.h */; };
+		2DE2E51D74FACB4FD55916D8 /* LKNSArrayCodingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E282AC1544C629DE1F7D /* LKNSArrayCodingProxy.h */; };
+		2DE2E5319AF31BFE088B266C /* CAMediaTimingFunctionBuiltin.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA6525FBB9143ED81CBD /* CAMediaTimingFunctionBuiltin.h */; };
+		2DE2E5E9D75DD4F6340D4D93 /* CAForceField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA6968B766923820A387 /* CAForceField.h */; };
+		2DE2E5EFD2386E9919E6F3A8 /* CASuspendNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E69D32D5B4956BEFABC4 /* CASuspendNotification.h */; };
+		2DE2E60C36007555BB7279E1 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E3A00DB0F636023D36A1 /* Test.h */; };
+		2DE2E6183F2CCE5F9211A7E7 /* NSObject-_CAObjectInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E6FF3B0346EBC3CE4963 /* NSObject-_CAObjectInternal.h */; };
+		2DE2E61953C05FA4D5D37C5E /* CALayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E5277FBBA46C55FEF1DA /* CALayer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2DE2E61B85B794AFADFF98C3 /* CAStateRemoveElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E938DB743A428ED2A783 /* CAStateRemoveElement.h */; };
+		2DE2E62E9017A8A75D012514 /* CAStateControllerUndo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E92EB612AB2905B4CC3F /* CAStateControllerUndo.h */; };
+		2DE2E631DA3156C6C938FA6E /* CADisplayMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EB9C50F2603AC4C52435 /* CADisplayMode.h */; };
+		2DE2E638FA0552C89D1C1050 /* NSValue-CAPoint3DAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E62E2A6F67064ABFCBE4 /* NSValue-CAPoint3DAdditions.h */; };
+		2DE2E64A2B48EFB72A1C8298 /* CAAction-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA4560730CB23980B638 /* CAAction-Protocol.h */; };
+		2DE2E662E767624A4D9CF561 /* CAStateRemoveAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E6393E1704793CE7AB74 /* CAStateRemoveAnimation.h */; };
+		2DE2E6631100ABFD92AB758C /* NSMutableCopying-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E29BB707A763D6DB5371 /* NSMutableCopying-Protocol.h */; };
+		2DE2E66E8812212AAFE07F3C /* NSDictionary-CARenderValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E56C0E902B99855F7259 /* NSDictionary-CARenderValue.h */; };
+		2DE2E677B9CC2B4DC628AD2C /* CAMLWriterDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EBBC2B66E6340BA342AF /* CAMLWriterDelegate-Protocol.h */; };
+		2DE2E6E326E683D28DFCA7B0 /* CASlotProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E92553BE515564B51140 /* CASlotProxy.h */; };
+		2DE2E6F23A0F5B15AA5A0E5C /* CAMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E6D6114E6F8D82012AC9 /* CAMLParser.h */; };
+		2DE2E73A31EED93A22FB81D9 /* CATransactionCompletionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E0CDD669D14C31B1D0C9 /* CATransactionCompletionItem.h */; };
+		2DE2E798729B38BD49AD35E5 /* NSDictionary-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA4D635197FC90B738B5 /* NSDictionary-CAMLWriter.h */; };
+		2DE2E79C61DDE468EB0329B0 /* CAMeshTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E0DEB4ACCB71AAC3EA5C /* CAMeshTransform.h */; };
+		2DE2E79DFBEC205B5A2C7E58 /* NSKeyedArchiverDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E00500C8A4FF5CECF762 /* NSKeyedArchiverDelegate-Protocol.h */; };
+		2DE2E79FA3C94639E74E08E4 /* CAScrollLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA52A848414B38E2123F /* CAScrollLayer.h */; };
+		2DE2E7A4525577F24A496E69 /* CAEmitterBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EEF63C6F929ED041F0D8 /* CAEmitterBehavior.h */; };
+		2DE2E7CB44225E37938FC06E /* CAStateControllerLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EC4B436E727CBF6A433C /* CAStateControllerLayer.h */; };
+		2DE2E7DD9AFFFC5A4FAB644C /* CALayerArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EF4F8345675781D2D260 /* CALayerArray.h */; };
+		2DE2E7FC72C721DD4DF95EB1 /* CA.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2ECF470FDED1C90B0F0C2 /* CA.h */; };
+		2DE2E809111CA97238072037 /* CA.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2EDE3301E9463693B0423 /* CA.mm */; };
+		2DE2E8211E458A2849C2C0B7 /* CAStateController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EC5AA5F6333AD018FD86 /* CAStateController.h */; };
+		2DE2E8684766D86E0AE7426D /* CABackdropLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2ED33572CAEF3588DC713 /* CABackdropLayer.h */; };
+		2DE2E885E77AD2CB5D2CABB1 /* CAPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EF2BB52C71AB18A01993 /* CAPackage.h */; };
+		2DE2E8B70C2A731F5A66F38E /* NSAffineTransform-CARenderValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E69840553BFA94CB61B9 /* NSAffineTransform-CARenderValue.h */; };
+		2DE2E8D1B9CC7B6CD231B928 /* CALayerHost.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E052B50A8AD5F343FA8F /* CALayerHost.h */; };
+		2DE2E8FA96EBA0657B24E718 /* CAMutableMeshTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E4B3D0C69B23641C14AE /* CAMutableMeshTransform.h */; };
+		2DE2E91F881DEDF360690C36 /* CACGPathCodingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E1C597E35D1E7AEA87F5 /* CACGPathCodingProxy.h */; };
+		2DE2E93BAB0648D873244E29 /* NSObject-CARenderValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E5F65AD81A2217F2447F /* NSObject-CARenderValue.h */; };
+		2DE2E992B68A0F2BFCDEFB69 /* NSCoder-CACoderAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E77E009409681F26BB8B /* NSCoder-CACoderAdditions.h */; };
+		2DE2E99444F01386A8277484 /* CASpring.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EBD70BB2B1B7FB8ABB60 /* CASpring.h */; };
+		2DE2E9AD5B90298AB3E96120 /* CASmoothedTextLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E8119D57AEE2C059F424 /* CASmoothedTextLayer.h */; };
+		2DE2E9B7B120444C55EA5A3F /* NSValue-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EE053369C5609C245144 /* NSValue-CAMLWriter.h */; };
+		2DE2E9D1986210B469AA5CD6 /* CALight.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E669525D1D260979D89E /* CALight.h */; };
+		2DE2E9EC302686EFD84D68D7 /* CABehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EE72DD199C8454CC2DA3 /* CABehavior.h */; };
+		2DE2EA58EBC96E7C77669E9B /* NSSecureCoding-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E9463A77DFD0A69CC351 /* NSSecureCoding-Protocol.h */; };
+		2DE2EA79444147D74C459D10 /* CATransaction.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E3BB3B12B48F4472DAC9 /* CATransaction.mm */; };
+		2DE2EB3C679D119DFF6FC07B /* CAFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E8B23FF71CB93813CC1A /* CAFilter.h */; };
+		2DE2EB71AC1C5C459E5EEC20 /* NSNumber-CARenderValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E8C78A93BBEE4187FD53 /* NSNumber-CARenderValue.h */; };
+		2DE2EB90170EBC354B5097F6 /* CACodingCAMLWriterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E5DA82FAEB1F1243AF0F /* CACodingCAMLWriterDelegate.h */; };
+		2DE2EB987EC0F4BE6AE44CDE /* CALayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E32BF932F0A976E1CD5B /* CALayer.h */; };
+		2DE2EB9899D1F0E59E40E97C /* EAGLDrawable-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA10A5C2F9AF5B8BFC72 /* EAGLDrawable-Protocol.h */; };
+		2DE2EB9E05C8E9874EFA7A1C /* CAStateTransitionElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E83388226F501E6D799E /* CAStateTransitionElement.h */; };
+		2DE2EBF62A335BDC64CBFCF1 /* NSCoding-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E2C285AB670C6B65A0D5 /* NSCoding-Protocol.h */; };
+		2DE2EC20F664782AC29EFBBB /* CAAnimationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E594BA2658FC281B155F /* CAAnimationGroup.h */; };
+		2DE2EC60F10A61B6958E07B1 /* CADisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E2D516738BFC77BBEAFF /* CADisplay.h */; };
+		2DE2EC73C3E24E3B74F1742E /* CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EF91B2A8302A9825531A /* CAMLWriter.h */; };
+		2DE2EC7E0FC8CE46998C7C2F /* CAPortalLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E45BAC8D7F947FF7FE51 /* CAPortalLayer.h */; };
+		2DE2EC8B2F047E6BBB59B916 /* LKCGImageCodingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EDCF309142D212781D4F /* LKCGImageCodingProxy.h */; };
+		2DE2EC9A8135AA6077F733E7 /* NSValue-CATransform3DAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E59A8D2EFB2B6287F51C /* NSValue-CATransform3DAdditions.h */; };
+		2DE2ECB0F9B062BA75062EF2 /* NSCopying-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E4258C742C26AD600301 /* NSCopying-Protocol.h */; };
+		2DE2ECB346DBE03F7FEE6CD1 /* NSValue-CAColorMatrixAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EEA632B2DD963D6CA2E8 /* NSValue-CAColorMatrixAdditions.h */; };
+		2DE2ECD862176B96922A470D /* CAAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EDE66B2B9407A21A6F6E /* CAAnimation.h */; };
+		2DE2ED1CF6DB2F66A08F8334 /* CAKeyframeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E99B5EA3D0C68BF7137B /* CAKeyframeAnimation.h */; };
+		2DE2ED52951B5671BD35E9B3 /* NSNumber-CAAnimatableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E848984CC5EF6200B1C3 /* NSNumber-CAAnimatableValue.h */; };
+		2DE2ED97B0454DDAEBB09EDD /* CAMeshInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E096848289F19299E7A2 /* CAMeshInterpolator.h */; };
+		2DE2EDA00CE954B645792753 /* NSObject-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E23FB6E90439A8171306 /* NSObject-Protocol.h */; };
+		2DE2EDB27D63108ABF7EE8E1 /* CATransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E85E678F0F9348FC2F5B /* CATransaction.h */; };
+		2DE2EDB53DD964A84646C971 /* CABasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E3F3D5124599A87B0754 /* CABasicAnimation.h */; };
+		2DE2EDBB98895E18550B5B57 /* CADisplayAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EE1FE6AC25726637F128 /* CADisplayAttributes.h */; };
+		2DE2EDC50E01BF3A332DE7B6 /* CAEmitterCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E3E4440945EF63292170 /* CAEmitterCell.h */; };
+		2DE2EDF754566F6A2A3D8BC8 /* NSObject-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EF93FB8C41CFBEE03A30 /* NSObject-CAMLWriter.h */; };
+		2DE2EE2BB67BD7C335D398E2 /* NSURL-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E4B1D2BBD34210228375 /* NSURL-CAMLWriter.h */; };
+		2DE2EE39AF7FB53B6960DEEF /* CARenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EC203B4C5B28A495C66A /* CARenderer.h */; };
+		2DE2EE8841D52F6A86A33A9D /* NSObject-CAAnimatableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E46E4776C7E87B94AA56 /* NSObject-CAAnimatableValue.h */; };
+		2DE2EE8EBE6528E8188EF6E1 /* CAStateControllerTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2ECC31509F5CE6EA79EE5 /* CAStateControllerTransition.h */; };
+		2DE2EE91185342024C3918A9 /* CATransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E2B182B9232715A95623 /* CATransaction.h */; };
+		2DE2EECBB608A7A65C510FD6 /* CATextLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E9EA85C51998DDF866FC /* CATextLayer.h */; };
+		2DE2EECCBB372DF9A2C15D4F /* CAStateElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E16857627CB65E18EDAA /* CAStateElement.h */; };
+		2DE2EEEE845EE22A82E2B028 /* NSNumber-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EBB244A3A9E944014FEA /* NSNumber-CAMLWriter.h */; };
+		2DE2EF086A5D15D3206D8965 /* CACGPatternCodingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EE1E2152B74C9FB43CF6 /* CACGPatternCodingProxy.h */; };
+		2DE2EF1A30FB724EEC9F6E32 /* CADebuggingArchiverDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA17CECC76D5A3D9FBAA /* CADebuggingArchiverDelegate.h */; };
+		2DE2EF32C1C5028BFABDDD74 /* LKNSDictionaryCodingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E3530DA720773FDD03D6 /* LKNSDictionaryCodingProxy.h */; };
+		2DE2EF3B2439B07977B3BC28 /* CALinearMaskLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EEAEE0AE712C7D5B3527 /* CALinearMaskLayer.h */; };
+		2DE2EF6BD674C9ABA3BC3EF3 /* NSArray-CAMLWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EDA28A6ED4CE9891483A /* NSArray-CAMLWriter.h */; };
+		2DE2EF726F849D6A209DD2F7 /* CAMatchMoveAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E8F60BA4C383DBB90430 /* CAMatchMoveAnimation.h */; };
+		2DE2EF7D0B556935DB93339E /* CARenderValue-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E8676A78C5128B0852B5 /* CARenderValue-Protocol.h */; };
+		2DE2EFA699D143440054927A /* CAStateAddAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E93B48817CADB3F43F36 /* CAStateAddAnimation.h */; };
+		2DE2EFB456C88638DC0347A5 /* CAReplicatorLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EFE6149EED14B429A384 /* CAReplicatorLayer.h */; };
+		2DE2EFBB53D1BAF7E9C7CB25 /* CAMediaTimingFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EC19B3B49A5B7996F5B1 /* CAMediaTimingFunction.h */; };
+		2DE2EFD6B6291ABC9F7E9765 /* CAStateControllerAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EAF98AE82D66CC264B3E /* CAStateControllerAnimation.h */; };
+		2DE2EFD9F6B16EF2CA058510 /* CACodingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EF9364CD7DFACC70B21B /* CACodingProxy.h */; };
+		CE30AD961FDD149B006AA26D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30AD8C1FDD149B006AA26D /* QuartzCore.framework */; };
+		CE30AD9B1FDD149B006AA26D /* QuartzCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30AD9A1FDD149B006AA26D /* QuartzCoreTests.m */; };
+		CE30AD9D1FDD149B006AA26D /* QuartzCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CE30AD8F1FDD149B006AA26D /* QuartzCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE30AD971FDD149B006AA26D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE30AD831FDD149B006AA26D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE30AD8B1FDD149B006AA26D;
+			remoteInfo = QuartzCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DE2E00500C8A4FF5CECF762 /* NSKeyedArchiverDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiverDelegate-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E019E505E955CA37B424 /* CAEAGLLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEAGLLayer.h; sourceTree = "<group>"; };
+		2DE2E025C7EFE9EF07DA146C /* CAContextImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAContextImpl.h; sourceTree = "<group>"; };
+		2DE2E052B50A8AD5F343FA8F /* CALayerHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerHost.h; sourceTree = "<group>"; };
+		2DE2E096848289F19299E7A2 /* CAMeshInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMeshInterpolator.h; sourceTree = "<group>"; };
+		2DE2E0B26B2A5B7E33E73624 /* CAIOSurfaceCodingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIOSurfaceCodingProxy.h; sourceTree = "<group>"; };
+		2DE2E0BE6CF7D1FD867D788A /* CACGPathCodingSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACGPathCodingSegment.h; sourceTree = "<group>"; };
+		2DE2E0CDD669D14C31B1D0C9 /* CATransactionCompletionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransactionCompletionItem.h; sourceTree = "<group>"; };
+		2DE2E0DEB4ACCB71AAC3EA5C /* CAMeshTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMeshTransform.h; sourceTree = "<group>"; };
+		2DE2E155D8A3585500CE1925 /* CAAnimationDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimationDelegate-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E1631EE7CB1F69B6A39A /* CAPresentationModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPresentationModifier.h; sourceTree = "<group>"; };
+		2DE2E163CFFF1FD9293945AD /* CAPropertyInfo-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAPropertyInfo-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E16857627CB65E18EDAA /* CAStateElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateElement.h; sourceTree = "<group>"; };
+		2DE2E1846334CA40E364EB0A /* NSSet-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet-CAMLWriter.h"; sourceTree = "<group>"; };
+		2DE2E1C597E35D1E7AEA87F5 /* CACGPathCodingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACGPathCodingProxy.h; sourceTree = "<group>"; };
+		2DE2E2307435C4558A687028 /* NSAffineTransform-CAAnimatableValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAffineTransform-CAAnimatableValue.h"; sourceTree = "<group>"; };
+		2DE2E23FB6E90439A8171306 /* NSObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E23FC3EEFBDBEA9A645E /* LKCGColorCodingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCGColorCodingProxy.h; sourceTree = "<group>"; };
+		2DE2E282AC1544C629DE1F7D /* LKNSArrayCodingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNSArrayCodingProxy.h; sourceTree = "<group>"; };
+		2DE2E29BB707A763D6DB5371 /* NSMutableCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableCopying-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E2B182B9232715A95623 /* CATransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransaction.h; sourceTree = "<group>"; };
+		2DE2E2B32040F324D5C53352 /* NSValue-CAAnimatableValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue-CAAnimatableValue.h"; sourceTree = "<group>"; };
+		2DE2E2C285AB670C6B65A0D5 /* NSCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoding-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E2D516738BFC77BBEAFF /* CADisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplay.h; sourceTree = "<group>"; };
+		2DE2E2E309745EA7DF9B3711 /* CAStateAddElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateAddElement.h; sourceTree = "<group>"; };
+		2DE2E32BF932F0A976E1CD5B /* CALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayer.h; sourceTree = "<group>"; };
+		2DE2E3530DA720773FDD03D6 /* LKNSDictionaryCodingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNSDictionaryCodingProxy.h; sourceTree = "<group>"; };
+		2DE2E3A00DB0F636023D36A1 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		2DE2E3BB3B12B48F4472DAC9 /* CATransaction.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CATransaction.mm; sourceTree = "<group>"; };
+		2DE2E3E4440945EF63292170 /* CAEmitterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterCell.h; sourceTree = "<group>"; };
+		2DE2E3F3D5124599A87B0754 /* CABasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimation.h; sourceTree = "<group>"; };
+		2DE2E4258C742C26AD600301 /* NSCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCopying-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E45335F93C552A5DB2A3 /* Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Test.mm; sourceTree = "<group>"; };
+		2DE2E45BAC8D7F947FF7FE51 /* CAPortalLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPortalLayer.h; sourceTree = "<group>"; };
+		2DE2E46E4776C7E87B94AA56 /* NSObject-CAAnimatableValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-CAAnimatableValue.h"; sourceTree = "<group>"; };
+		2DE2E4B1D2BBD34210228375 /* NSURL-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL-CAMLWriter.h"; sourceTree = "<group>"; };
+		2DE2E4B3D0C69B23641C14AE /* CAMutableMeshTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMutableMeshTransform.h; sourceTree = "<group>"; };
+		2DE2E5277FBBA46C55FEF1DA /* CALayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CALayer.mm; sourceTree = "<group>"; };
+		2DE2E5561A7E50F1CB8724AB /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		2DE2E56C0E902B99855F7259 /* NSDictionary-CARenderValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-CARenderValue.h"; sourceTree = "<group>"; };
+		2DE2E5768103CC45A7F4FE5B /* CAStateSetValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateSetValue.h; sourceTree = "<group>"; };
+		2DE2E589B0B878A6300EB526 /* CADynamicsBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADynamicsBehavior.h; sourceTree = "<group>"; };
+		2DE2E594BA2658FC281B155F /* CAAnimationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroup.h; sourceTree = "<group>"; };
+		2DE2E59A8D2EFB2B6287F51C /* NSValue-CATransform3DAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue-CATransform3DAdditions.h"; sourceTree = "<group>"; };
+		2DE2E5A4F992BB2435169DAA /* CALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayer.h; sourceTree = "<group>"; };
+		2DE2E5BFF965109007A13126 /* CAShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayer.h; sourceTree = "<group>"; };
+		2DE2E5DA82FAEB1F1243AF0F /* CACodingCAMLWriterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACodingCAMLWriterDelegate.h; sourceTree = "<group>"; };
+		2DE2E5F65AD81A2217F2447F /* NSObject-CARenderValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-CARenderValue.h"; sourceTree = "<group>"; };
+		2DE2E62E2A6F67064ABFCBE4 /* NSValue-CAPoint3DAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue-CAPoint3DAdditions.h"; sourceTree = "<group>"; };
+		2DE2E6393E1704793CE7AB74 /* CAStateRemoveAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateRemoveAnimation.h; sourceTree = "<group>"; };
+		2DE2E65B2AC4497E34C6A9BE /* CAEmitterLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayer.h; sourceTree = "<group>"; };
+		2DE2E669525D1D260979D89E /* CALight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALight.h; sourceTree = "<group>"; };
+		2DE2E66E288C570ECDBB9B28 /* CATiledLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATiledLayer.h; sourceTree = "<group>"; };
+		2DE2E673B3EB3BBFF56CE785 /* CAStateRecorder-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAStateRecorder-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E69840553BFA94CB61B9 /* NSAffineTransform-CARenderValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAffineTransform-CARenderValue.h"; sourceTree = "<group>"; };
+		2DE2E69D32D5B4956BEFABC4 /* CASuspendNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASuspendNotification.h; sourceTree = "<group>"; };
+		2DE2E6D6114E6F8D82012AC9 /* CAMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMLParser.h; sourceTree = "<group>"; };
+		2DE2E6DA8DD75C87A2CAEB42 /* NSValue-CARenderValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue-CARenderValue.h"; sourceTree = "<group>"; };
+		2DE2E6DEA62D22434BF35B89 /* CAState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAState.h; sourceTree = "<group>"; };
+		2DE2E6E5F4BC6AB9301ADDC3 /* CAValueFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAValueFunction.h; sourceTree = "<group>"; };
+		2DE2E6FF3B0346EBC3CE4963 /* NSObject-_CAObjectInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-_CAObjectInternal.h"; sourceTree = "<group>"; };
+		2DE2E749F301B56ED461F566 /* CADisplayLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLink.h; sourceTree = "<group>"; };
+		2DE2E75316D3806E64E41457 /* CAPresentationModifierGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPresentationModifierGroup.h; sourceTree = "<group>"; };
+		2DE2E77E009409681F26BB8B /* NSCoder-CACoderAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder-CACoderAdditions.h"; sourceTree = "<group>"; };
+		2DE2E7F779F23F8A72AB2C3D /* CATransformLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformLayer.h; sourceTree = "<group>"; };
+		2DE2E8119D57AEE2C059F424 /* CASmoothedTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASmoothedTextLayer.h; sourceTree = "<group>"; };
+		2DE2E83388226F501E6D799E /* CAStateTransitionElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateTransitionElement.h; sourceTree = "<group>"; };
+		2DE2E848984CC5EF6200B1C3 /* NSNumber-CAAnimatableValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber-CAAnimatableValue.h"; sourceTree = "<group>"; };
+		2DE2E85E678F0F9348FC2F5B /* CATransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransaction.h; sourceTree = "<group>"; };
+		2DE2E8676A78C5128B0852B5 /* CARenderValue-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CARenderValue-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E8B23FF71CB93813CC1A /* CAFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFilter.h; sourceTree = "<group>"; };
+		2DE2E8C78A93BBEE4187FD53 /* NSNumber-CARenderValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber-CARenderValue.h"; sourceTree = "<group>"; };
+		2DE2E8F60BA4C383DBB90430 /* CAMatchMoveAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMatchMoveAnimation.h; sourceTree = "<group>"; };
+		2DE2E92553BE515564B51140 /* CASlotProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASlotProxy.h; sourceTree = "<group>"; };
+		2DE2E92EB612AB2905B4CC3F /* CAStateControllerUndo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateControllerUndo.h; sourceTree = "<group>"; };
+		2DE2E938DB743A428ED2A783 /* CAStateRemoveElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateRemoveElement.h; sourceTree = "<group>"; };
+		2DE2E93B48817CADB3F43F36 /* CAStateAddAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateAddAnimation.h; sourceTree = "<group>"; };
+		2DE2E9463A77DFD0A69CC351 /* NSSecureCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSecureCoding-Protocol.h"; sourceTree = "<group>"; };
+		2DE2E95D68509E867952F198 /* CAContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAContext.h; sourceTree = "<group>"; };
+		2DE2E99B5EA3D0C68BF7137B /* CAKeyframeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimation.h; sourceTree = "<group>"; };
+		2DE2E9A491073233DC28F794 /* CASpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASpringAnimation.h; sourceTree = "<group>"; };
+		2DE2E9EA85C51998DDF866FC /* CATextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATextLayer.h; sourceTree = "<group>"; };
+		2DE2EA0C746BDDA2C9AF5F58 /* CAAnimatableValue-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimatableValue-Protocol.h"; sourceTree = "<group>"; };
+		2DE2EA10A5C2F9AF5B8BFC72 /* EAGLDrawable-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EAGLDrawable-Protocol.h"; sourceTree = "<group>"; };
+		2DE2EA17CECC76D5A3D9FBAA /* CADebuggingArchiverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebuggingArchiverDelegate.h; sourceTree = "<group>"; };
+		2DE2EA30D161B284C8124D71 /* CAPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPropertyAnimation.h; sourceTree = "<group>"; };
+		2DE2EA4560730CB23980B638 /* CAAction-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAction-Protocol.h"; sourceTree = "<group>"; };
+		2DE2EA4D635197FC90B738B5 /* NSDictionary-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-CAMLWriter.h"; sourceTree = "<group>"; };
+		2DE2EA52A848414B38E2123F /* CAScrollLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScrollLayer.h; sourceTree = "<group>"; };
+		2DE2EA6525FBB9143ED81CBD /* CAMediaTimingFunctionBuiltin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingFunctionBuiltin.h; sourceTree = "<group>"; };
+		2DE2EA6968B766923820A387 /* CAForceField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAForceField.h; sourceTree = "<group>"; };
+		2DE2EAF98AE82D66CC264B3E /* CAStateControllerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateControllerAnimation.h; sourceTree = "<group>"; };
+		2DE2EB380CEDC6F1B4153797 /* CAMediaTiming-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMediaTiming-Protocol.h"; sourceTree = "<group>"; };
+		2DE2EB9C50F2603AC4C52435 /* CADisplayMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayMode.h; sourceTree = "<group>"; };
+		2DE2EBB244A3A9E944014FEA /* NSNumber-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber-CAMLWriter.h"; sourceTree = "<group>"; };
+		2DE2EBB6C48971AB09492BD7 /* CATransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransition.h; sourceTree = "<group>"; };
+		2DE2EBBC2B66E6340BA342AF /* CAMLWriterDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMLWriterDelegate-Protocol.h"; sourceTree = "<group>"; };
+		2DE2EBD70BB2B1B7FB8ABB60 /* CASpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASpring.h; sourceTree = "<group>"; };
+		2DE2EBFDEF4CF76E0393A7F6 /* NSNull-CAActionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull-CAActionAdditions.h"; sourceTree = "<group>"; };
+		2DE2EC0B2B4705B624A2BC9A /* CAWindowServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAWindowServer.h; sourceTree = "<group>"; };
+		2DE2EC19B3B49A5B7996F5B1 /* CAMediaTimingFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMediaTimingFunction.h; sourceTree = "<group>"; };
+		2DE2EC203B4C5B28A495C66A /* CARenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CARenderer.h; sourceTree = "<group>"; };
+		2DE2EC4B436E727CBF6A433C /* CAStateControllerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateControllerLayer.h; sourceTree = "<group>"; };
+		2DE2EC5AA5F6333AD018FD86 /* CAStateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateController.h; sourceTree = "<group>"; };
+		2DE2ECC31509F5CE6EA79EE5 /* CAStateControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateControllerTransition.h; sourceTree = "<group>"; };
+		2DE2ECC674D443B044BD3CBB /* CAStateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStateTransition.h; sourceTree = "<group>"; };
+		2DE2ECF470FDED1C90B0F0C2 /* CA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CA.h; sourceTree = "<group>"; };
+		2DE2ED01EF7996BAA5EE2185 /* CAWindowServerDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAWindowServerDisplay.h; sourceTree = "<group>"; };
+		2DE2ED06D8C1278176C77558 /* NSNull-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull-CAMLWriter.h"; sourceTree = "<group>"; };
+		2DE2ED33572CAEF3588DC713 /* CABackdropLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABackdropLayer.h; sourceTree = "<group>"; };
+		2DE2EDA28A6ED4CE9891483A /* NSArray-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-CAMLWriter.h"; sourceTree = "<group>"; };
+		2DE2EDB3C5CF3C646B6D52D3 /* LKNSValueCodingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNSValueCodingProxy.h; sourceTree = "<group>"; };
+		2DE2EDCF309142D212781D4F /* LKCGImageCodingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCGImageCodingProxy.h; sourceTree = "<group>"; };
+		2DE2EDE18E7C37F5ACDB8CCC /* NSString-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-CAMLWriter.h"; sourceTree = "<group>"; };
+		2DE2EDE3301E9463693B0423 /* CA.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "file.m,"; path = CA.mm; sourceTree = "<group>"; };
+		2DE2EDE66B2B9407A21A6F6E /* CAAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimation.h; sourceTree = "<group>"; };
+		2DE2EE053369C5609C245144 /* NSValue-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue-CAMLWriter.h"; sourceTree = "<group>"; };
+		2DE2EE1E2152B74C9FB43CF6 /* CACGPatternCodingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACGPatternCodingProxy.h; sourceTree = "<group>"; };
+		2DE2EE1FE6AC25726637F128 /* CADisplayAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayAttributes.h; sourceTree = "<group>"; };
+		2DE2EE72DD199C8454CC2DA3 /* CABehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABehavior.h; sourceTree = "<group>"; };
+		2DE2EEA632B2DD963D6CA2E8 /* NSValue-CAColorMatrixAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue-CAColorMatrixAdditions.h"; sourceTree = "<group>"; };
+		2DE2EEA69AD24462C40936A8 /* CADistanceFieldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADistanceFieldLayer.h; sourceTree = "<group>"; };
+		2DE2EEAEE0AE712C7D5B3527 /* CALinearMaskLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALinearMaskLayer.h; sourceTree = "<group>"; };
+		2DE2EEEA49D4A124E4CB9A26 /* CAGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayer.h; sourceTree = "<group>"; };
+		2DE2EEF63C6F929ED041F0D8 /* CAEmitterBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterBehavior.h; sourceTree = "<group>"; };
+		2DE2EF2BB52C71AB18A01993 /* CAPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPackage.h; sourceTree = "<group>"; };
+		2DE2EF4F8345675781D2D260 /* CALayerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerArray.h; sourceTree = "<group>"; };
+		2DE2EF91B2A8302A9825531A /* CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMLWriter.h; sourceTree = "<group>"; };
+		2DE2EF9364CD7DFACC70B21B /* CACodingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACodingProxy.h; sourceTree = "<group>"; };
+		2DE2EF93FB8C41CFBEE03A30 /* NSObject-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-CAMLWriter.h"; sourceTree = "<group>"; };
+		2DE2EFB271FE4508ADD543E1 /* NSArray-CAAnimatableValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-CAAnimatableValue.h"; sourceTree = "<group>"; };
+		2DE2EFE6149EED14B429A384 /* CAReplicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAReplicatorLayer.h; sourceTree = "<group>"; };
+		2DE2EFF6DF19ECC31CCF561B /* NSAffineTransform-CAMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAffineTransform-CAMLWriter.h"; sourceTree = "<group>"; };
+		CE30AD8C1FDD149B006AA26D /* QuartzCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuartzCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE30AD8F1FDD149B006AA26D /* QuartzCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuartzCore.h; sourceTree = "<group>"; };
+		CE30AD901FDD149B006AA26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE30AD951FDD149B006AA26D /* QuartzCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuartzCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE30AD9A1FDD149B006AA26D /* QuartzCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuartzCoreTests.m; sourceTree = "<group>"; };
+		CE30AD9C1FDD149B006AA26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE30AD881FDD149B006AA26D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE30AD921FDD149B006AA26D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE30AD961FDD149B006AA26D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DE2EA0366BFB0B85FBCBDE2 /* class-dump */ = {
+			isa = PBXGroup;
+			children = (
+				2DE2E5A4F992BB2435169DAA /* CALayer.h */,
+				2DE2E669525D1D260979D89E /* CALight.h */,
+				2DE2E6DEA62D22434BF35B89 /* CAState.h */,
+				2DE2E8B23FF71CB93813CC1A /* CAFilter.h */,
+				2DE2EBD70BB2B1B7FB8ABB60 /* CASpring.h */,
+				2DE2E95D68509E867952F198 /* CAContext.h */,
+				2DE2E2D516738BFC77BBEAFF /* CADisplay.h */,
+				2DE2EF2BB52C71AB18A01993 /* CAPackage.h */,
+				2DE2EE72DD199C8454CC2DA3 /* CABehavior.h */,
+				2DE2E6D6114E6F8D82012AC9 /* CAMLParser.h */,
+				2DE2EF91B2A8302A9825531A /* CAMLWriter.h */,
+				2DE2EC203B4C5B28A495C66A /* CARenderer.h */,
+				2DE2EDE66B2B9407A21A6F6E /* CAAnimation.h */,
+				2DE2E019E505E955CA37B424 /* CAEAGLLayer.h */,
+				2DE2E052B50A8AD5F343FA8F /* CALayerHost.h */,
+				2DE2E92553BE515564B51140 /* CASlotProxy.h */,
+				2DE2E9EA85C51998DDF866FC /* CATextLayer.h */,
+				2DE2EA6968B766923820A387 /* CAForceField.h */,
+				2DE2EF4F8345675781D2D260 /* CALayerArray.h */,
+				2DE2E5BFF965109007A13126 /* CAShapeLayer.h */,
+				2DE2E66E288C570ECDBB9B28 /* CATiledLayer.h */,
+				2DE2EBB6C48971AB09492BD7 /* CATransition.h */,
+				2DE2E5561A7E50F1CB8724AB /* CDStructures.h */,
+				2DE2EF9364CD7DFACC70B21B /* CACodingProxy.h */,
+				2DE2E025C7EFE9EF07DA146C /* CAContextImpl.h */,
+				2DE2E749F301B56ED461F566 /* CADisplayLink.h */,
+				2DE2EB9C50F2603AC4C52435 /* CADisplayMode.h */,
+				2DE2E3E4440945EF63292170 /* CAEmitterCell.h */,
+				2DE2E45BAC8D7F947FF7FE51 /* CAPortalLayer.h */,
+				2DE2EA52A848414B38E2123F /* CAScrollLayer.h */,
+				2DE2E2B182B9232715A95623 /* CATransaction.h */,
+				2DE2E65B2AC4497E34C6A9BE /* CAEmitterLayer.h */,
+				2DE2E16857627CB65E18EDAA /* CAStateElement.h */,
+				2DE2EC0B2B4705B624A2BC9A /* CAWindowServer.h */,
+				2DE2ED33572CAEF3588DC713 /* CABackdropLayer.h */,
+				2DE2EEEA49D4A124E4CB9A26 /* CAGradientLayer.h */,
+				2DE2E0DEB4ACCB71AAC3EA5C /* CAMeshTransform.h */,
+				2DE2E5768103CC45A7F4FE5B /* CAStateSetValue.h */,
+				2DE2E6E5F4BC6AB9301ADDC3 /* CAValueFunction.h */,
+				2DE2E594BA2658FC281B155F /* CAAnimationGroup.h */,
+				2DE2E3F3D5124599A87B0754 /* CABasicAnimation.h */,
+				2DE2E7F779F23F8A72AB2C3D /* CATransformLayer.h */,
+				2DE2E1846334CA40E364EB0A /* NSSet-CAMLWriter.h */,
+				2DE2E4B1D2BBD34210228375 /* NSURL-CAMLWriter.h */,
+				2DE2EA4560730CB23980B638 /* CAAction-Protocol.h */,
+				2DE2EEF63C6F929ED041F0D8 /* CAEmitterBehavior.h */,
+				2DE2EEAEE0AE712C7D5B3527 /* CALinearMaskLayer.h */,
+				2DE2EFE6149EED14B429A384 /* CAReplicatorLayer.h */,
+				2DE2E9A491073233DC28F794 /* CASpringAnimation.h */,
+				2DE2E2E309745EA7DF9B3711 /* CAStateAddElement.h */,
+				2DE2EC5AA5F6333AD018FD86 /* CAStateController.h */,
+				2DE2ECC674D443B044BD3CBB /* CAStateTransition.h */,
+				2DE2E2C285AB670C6B65A0D5 /* NSCoding-Protocol.h */,
+				2DE2ED06D8C1278176C77558 /* NSNull-CAMLWriter.h */,
+				2DE2E23FB6E90439A8171306 /* NSObject-Protocol.h */,
+				2DE2E589B0B878A6300EB526 /* CADynamicsBehavior.h */,
+				2DE2E096848289F19299E7A2 /* CAMeshInterpolator.h */,
+				2DE2EDA28A6ED4CE9891483A /* NSArray-CAMLWriter.h */,
+				2DE2E4258C742C26AD600301 /* NSCopying-Protocol.h */,
+				2DE2EE053369C5609C245144 /* NSValue-CAMLWriter.h */,
+				2DE2E1C597E35D1E7AEA87F5 /* CACGPathCodingProxy.h */,
+				2DE2EE1FE6AC25726637F128 /* CADisplayAttributes.h */,
+				2DE2E99B5EA3D0C68BF7137B /* CAKeyframeAnimation.h */,
+				2DE2EA30D161B284C8124D71 /* CAPropertyAnimation.h */,
+				2DE2E8119D57AEE2C059F424 /* CASmoothedTextLayer.h */,
+				2DE2E93B48817CADB3F43F36 /* CAStateAddAnimation.h */,
+				2DE2EBB244A3A9E944014FEA /* NSNumber-CAMLWriter.h */,
+				2DE2EF93FB8C41CFBEE03A30 /* NSObject-CAMLWriter.h */,
+				2DE2EDE18E7C37F5ACDB8CCC /* NSString-CAMLWriter.h */,
+				2DE2EEA69AD24462C40936A8 /* CADistanceFieldLayer.h */,
+				2DE2E8F60BA4C383DBB90430 /* CAMatchMoveAnimation.h */,
+				2DE2E938DB743A428ED2A783 /* CAStateRemoveElement.h */,
+				2DE2E23FC3EEFBDBEA9A645E /* LKCGColorCodingProxy.h */,
+				2DE2EDCF309142D212781D4F /* LKCGImageCodingProxy.h */,
+				2DE2E282AC1544C629DE1F7D /* LKNSArrayCodingProxy.h */,
+				2DE2EDB3C5CF3C646B6D52D3 /* LKNSValueCodingProxy.h */,
+				2DE2E0BE6CF7D1FD867D788A /* CACGPathCodingSegment.h */,
+				2DE2EC19B3B49A5B7996F5B1 /* CAMediaTimingFunction.h */,
+				2DE2E92EB612AB2905B4CC3F /* CAStateControllerUndo.h */,
+				2DE2E69D32D5B4956BEFABC4 /* CASuspendNotification.h */,
+				2DE2ED01EF7996BAA5EE2185 /* CAWindowServerDisplay.h */,
+				2DE2EA10A5C2F9AF5B8BFC72 /* EAGLDrawable-Protocol.h */,
+				2DE2E6DA8DD75C87A2CAEB42 /* NSValue-CARenderValue.h */,
+				2DE2EE1E2152B74C9FB43CF6 /* CACGPatternCodingProxy.h */,
+				2DE2E0B26B2A5B7E33E73624 /* CAIOSurfaceCodingProxy.h */,
+				2DE2EB380CEDC6F1B4153797 /* CAMediaTiming-Protocol.h */,
+				2DE2E4B3D0C69B23641C14AE /* CAMutableMeshTransform.h */,
+				2DE2E1631EE7CB1F69B6A39A /* CAPresentationModifier.h */,
+				2DE2E8676A78C5128B0852B5 /* CARenderValue-Protocol.h */,
+				2DE2EC4B436E727CBF6A433C /* CAStateControllerLayer.h */,
+				2DE2E6393E1704793CE7AB74 /* CAStateRemoveAnimation.h */,
+				2DE2E8C78A93BBEE4187FD53 /* NSNumber-CARenderValue.h */,
+				2DE2E5F65AD81A2217F2447F /* NSObject-CARenderValue.h */,
+				2DE2E163CFFF1FD9293945AD /* CAPropertyInfo-Protocol.h */,
+				2DE2EA4D635197FC90B738B5 /* NSDictionary-CAMLWriter.h */,
+				2DE2E9463A77DFD0A69CC351 /* NSSecureCoding-Protocol.h */,
+				2DE2E673B3EB3BBFF56CE785 /* CAStateRecorder-Protocol.h */,
+				2DE2E83388226F501E6D799E /* CAStateTransitionElement.h */,
+				2DE2E77E009409681F26BB8B /* NSCoder-CACoderAdditions.h */,
+				2DE2EBFDEF4CF76E0393A7F6 /* NSNull-CAActionAdditions.h */,
+				2DE2E3530DA720773FDD03D6 /* LKNSDictionaryCodingProxy.h */,
+				2DE2EFB271FE4508ADD543E1 /* NSArray-CAAnimatableValue.h */,
+				2DE2E29BB707A763D6DB5371 /* NSMutableCopying-Protocol.h */,
+				2DE2E2B32040F324D5C53352 /* NSValue-CAAnimatableValue.h */,
+				2DE2EA0C746BDDA2C9AF5F58 /* CAAnimatableValue-Protocol.h */,
+				2DE2E5DA82FAEB1F1243AF0F /* CACodingCAMLWriterDelegate.h */,
+				2DE2EAF98AE82D66CC264B3E /* CAStateControllerAnimation.h */,
+				2DE2E56C0E902B99855F7259 /* NSDictionary-CARenderValue.h */,
+				2DE2E848984CC5EF6200B1C3 /* NSNumber-CAAnimatableValue.h */,
+				2DE2E6FF3B0346EBC3CE4963 /* NSObject-_CAObjectInternal.h */,
+				2DE2E46E4776C7E87B94AA56 /* NSObject-CAAnimatableValue.h */,
+				2DE2E62E2A6F67064ABFCBE4 /* NSValue-CAPoint3DAdditions.h */,
+				2DE2EA17CECC76D5A3D9FBAA /* CADebuggingArchiverDelegate.h */,
+				2DE2EBBC2B66E6340BA342AF /* CAMLWriterDelegate-Protocol.h */,
+				2DE2E75316D3806E64E41457 /* CAPresentationModifierGroup.h */,
+				2DE2ECC31509F5CE6EA79EE5 /* CAStateControllerTransition.h */,
+				2DE2E0CDD669D14C31B1D0C9 /* CATransactionCompletionItem.h */,
+				2DE2E155D8A3585500CE1925 /* CAAnimationDelegate-Protocol.h */,
+				2DE2EA6525FBB9143ED81CBD /* CAMediaTimingFunctionBuiltin.h */,
+				2DE2EFF6DF19ECC31CCF561B /* NSAffineTransform-CAMLWriter.h */,
+				2DE2EEA632B2DD963D6CA2E8 /* NSValue-CAColorMatrixAdditions.h */,
+				2DE2E59A8D2EFB2B6287F51C /* NSValue-CATransform3DAdditions.h */,
+				2DE2E69840553BFA94CB61B9 /* NSAffineTransform-CARenderValue.h */,
+				2DE2E00500C8A4FF5CECF762 /* NSKeyedArchiverDelegate-Protocol.h */,
+				2DE2E2307435C4558A687028 /* NSAffineTransform-CAAnimatableValue.h */,
+			);
+			path = "class-dump";
+			sourceTree = "<group>";
+		};
+		CE30AD821FDD149B006AA26D = {
+			isa = PBXGroup;
+			children = (
+				CE30AD8E1FDD149B006AA26D /* QuartzCore */,
+				CE30AD991FDD149B006AA26D /* QuartzCoreTests */,
+				CE30AD8D1FDD149B006AA26D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE30AD8D1FDD149B006AA26D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE30AD8C1FDD149B006AA26D /* QuartzCore.framework */,
+				CE30AD951FDD149B006AA26D /* QuartzCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE30AD8E1FDD149B006AA26D /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				CE30AD8F1FDD149B006AA26D /* QuartzCore.h */,
+				CE30AD901FDD149B006AA26D /* Info.plist */,
+				2DE2E5277FBBA46C55FEF1DA /* CALayer.mm */,
+				2DE2E3BB3B12B48F4472DAC9 /* CATransaction.mm */,
+				2DE2EDE3301E9463693B0423 /* CA.mm */,
+				2DE2EA0366BFB0B85FBCBDE2 /* class-dump */,
+				2DE2E32BF932F0A976E1CD5B /* CALayer.h */,
+				2DE2E85E678F0F9348FC2F5B /* CATransaction.h */,
+				2DE2ECF470FDED1C90B0F0C2 /* CA.h */,
+				2DE2E45335F93C552A5DB2A3 /* Test.mm */,
+				2DE2E3A00DB0F636023D36A1 /* Test.h */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		CE30AD991FDD149B006AA26D /* QuartzCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE30AD9A1FDD149B006AA26D /* QuartzCoreTests.m */,
+				CE30AD9C1FDD149B006AA26D /* Info.plist */,
+			);
+			path = QuartzCoreTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE30AD891FDD149B006AA26D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE30AD9D1FDD149B006AA26D /* QuartzCore.h in Headers */,
+				2DE2E3C51B0F1F97C491BCD1 /* CALayer.h in Headers */,
+				2DE2E9D1986210B469AA5CD6 /* CALight.h in Headers */,
+				2DE2E209745ACCE171422849 /* CAState.h in Headers */,
+				2DE2EB3C679D119DFF6FC07B /* CAFilter.h in Headers */,
+				2DE2E99444F01386A8277484 /* CASpring.h in Headers */,
+				2DE2E193A57BA9C631F6D008 /* CAContext.h in Headers */,
+				2DE2EC60F10A61B6958E07B1 /* CADisplay.h in Headers */,
+				2DE2E885E77AD2CB5D2CABB1 /* CAPackage.h in Headers */,
+				2DE2E9EC302686EFD84D68D7 /* CABehavior.h in Headers */,
+				2DE2E6F23A0F5B15AA5A0E5C /* CAMLParser.h in Headers */,
+				2DE2EC73C3E24E3B74F1742E /* CAMLWriter.h in Headers */,
+				2DE2EE39AF7FB53B6960DEEF /* CARenderer.h in Headers */,
+				2DE2ECD862176B96922A470D /* CAAnimation.h in Headers */,
+				2DE2E01A8B782411877BB9FB /* CAEAGLLayer.h in Headers */,
+				2DE2E8D1B9CC7B6CD231B928 /* CALayerHost.h in Headers */,
+				2DE2E6E326E683D28DFCA7B0 /* CASlotProxy.h in Headers */,
+				2DE2EECBB608A7A65C510FD6 /* CATextLayer.h in Headers */,
+				2DE2E5E9D75DD4F6340D4D93 /* CAForceField.h in Headers */,
+				2DE2E7DD9AFFFC5A4FAB644C /* CALayerArray.h in Headers */,
+				2DE2E25C5C14CD35C7EE8AD7 /* CAShapeLayer.h in Headers */,
+				2DE2E13CD78709E6172439B3 /* CATiledLayer.h in Headers */,
+				2DE2E014915D861E51AA3742 /* CATransition.h in Headers */,
+				2DE2E42B2B90F7F981B16DE9 /* CDStructures.h in Headers */,
+				2DE2EFD9F6B16EF2CA058510 /* CACodingProxy.h in Headers */,
+				2DE2E35E55317473268C3B44 /* CAContextImpl.h in Headers */,
+				2DE2E19194A174742B33BB3A /* CADisplayLink.h in Headers */,
+				2DE2E631DA3156C6C938FA6E /* CADisplayMode.h in Headers */,
+				2DE2EDC50E01BF3A332DE7B6 /* CAEmitterCell.h in Headers */,
+				2DE2EC7E0FC8CE46998C7C2F /* CAPortalLayer.h in Headers */,
+				2DE2E79FA3C94639E74E08E4 /* CAScrollLayer.h in Headers */,
+				2DE2EE91185342024C3918A9 /* CATransaction.h in Headers */,
+				2DE2E1147EDE2365FF03D3FF /* CAEmitterLayer.h in Headers */,
+				2DE2EECCBB372DF9A2C15D4F /* CAStateElement.h in Headers */,
+				2DE2E014B0CE250634017A6F /* CAWindowServer.h in Headers */,
+				2DE2E8684766D86E0AE7426D /* CABackdropLayer.h in Headers */,
+				2DE2E36B4F99E3BD7DB82A91 /* CAGradientLayer.h in Headers */,
+				2DE2E79C61DDE468EB0329B0 /* CAMeshTransform.h in Headers */,
+				2DE2E4D5DE033E586B2BC228 /* CAStateSetValue.h in Headers */,
+				2DE2E1E36BB83261E9A6B7AF /* CAValueFunction.h in Headers */,
+				2DE2EC20F664782AC29EFBBB /* CAAnimationGroup.h in Headers */,
+				2DE2EDB53DD964A84646C971 /* CABasicAnimation.h in Headers */,
+				2DE2E4886869C4A52FB840C7 /* CATransformLayer.h in Headers */,
+				2DE2E430D25A774B9496738A /* NSSet-CAMLWriter.h in Headers */,
+				2DE2EE2BB67BD7C335D398E2 /* NSURL-CAMLWriter.h in Headers */,
+				2DE2E64A2B48EFB72A1C8298 /* CAAction-Protocol.h in Headers */,
+				2DE2E7A4525577F24A496E69 /* CAEmitterBehavior.h in Headers */,
+				2DE2EF3B2439B07977B3BC28 /* CALinearMaskLayer.h in Headers */,
+				2DE2EFB456C88638DC0347A5 /* CAReplicatorLayer.h in Headers */,
+				2DE2E3682574E4B4248224E0 /* CASpringAnimation.h in Headers */,
+				2DE2E1169E15E0FD40BF689A /* CAStateAddElement.h in Headers */,
+				2DE2E8211E458A2849C2C0B7 /* CAStateController.h in Headers */,
+				2DE2E30AAEB923A59CCEE62C /* CAStateTransition.h in Headers */,
+				2DE2EBF62A335BDC64CBFCF1 /* NSCoding-Protocol.h in Headers */,
+				2DE2E0D424F663C472830485 /* NSNull-CAMLWriter.h in Headers */,
+				2DE2EDA00CE954B645792753 /* NSObject-Protocol.h in Headers */,
+				2DE2E0D1EDF9FB2447F16ADE /* CADynamicsBehavior.h in Headers */,
+				2DE2ED97B0454DDAEBB09EDD /* CAMeshInterpolator.h in Headers */,
+				2DE2EF6BD674C9ABA3BC3EF3 /* NSArray-CAMLWriter.h in Headers */,
+				2DE2ECB0F9B062BA75062EF2 /* NSCopying-Protocol.h in Headers */,
+				2DE2E9B7B120444C55EA5A3F /* NSValue-CAMLWriter.h in Headers */,
+				2DE2E91F881DEDF360690C36 /* CACGPathCodingProxy.h in Headers */,
+				2DE2EDBB98895E18550B5B57 /* CADisplayAttributes.h in Headers */,
+				2DE2ED1CF6DB2F66A08F8334 /* CAKeyframeAnimation.h in Headers */,
+				2DE2E4B04C0C9EF7E793E98C /* CAPropertyAnimation.h in Headers */,
+				2DE2E9AD5B90298AB3E96120 /* CASmoothedTextLayer.h in Headers */,
+				2DE2EFA699D143440054927A /* CAStateAddAnimation.h in Headers */,
+				2DE2EEEE845EE22A82E2B028 /* NSNumber-CAMLWriter.h in Headers */,
+				2DE2EDF754566F6A2A3D8BC8 /* NSObject-CAMLWriter.h in Headers */,
+				2DE2E463E1F5D28F260CA21B /* NSString-CAMLWriter.h in Headers */,
+				2DE2E0772057BEF2A9D0F560 /* CADistanceFieldLayer.h in Headers */,
+				2DE2EF726F849D6A209DD2F7 /* CAMatchMoveAnimation.h in Headers */,
+				2DE2E61B85B794AFADFF98C3 /* CAStateRemoveElement.h in Headers */,
+				2DE2E1DB580CF5F6CCDAF534 /* LKCGColorCodingProxy.h in Headers */,
+				2DE2EC8B2F047E6BBB59B916 /* LKCGImageCodingProxy.h in Headers */,
+				2DE2E51D74FACB4FD55916D8 /* LKNSArrayCodingProxy.h in Headers */,
+				2DE2E2BA010D757666C1E0CD /* LKNSValueCodingProxy.h in Headers */,
+				2DE2E0FE4D3CE68A079EE77F /* CACGPathCodingSegment.h in Headers */,
+				2DE2EFBB53D1BAF7E9C7CB25 /* CAMediaTimingFunction.h in Headers */,
+				2DE2E62E9017A8A75D012514 /* CAStateControllerUndo.h in Headers */,
+				2DE2E5EFD2386E9919E6F3A8 /* CASuspendNotification.h in Headers */,
+				2DE2E45913B38EDA81154025 /* CAWindowServerDisplay.h in Headers */,
+				2DE2EB9899D1F0E59E40E97C /* EAGLDrawable-Protocol.h in Headers */,
+				2DE2E3550D78C1D7FE9A066A /* NSValue-CARenderValue.h in Headers */,
+				2DE2EF086A5D15D3206D8965 /* CACGPatternCodingProxy.h in Headers */,
+				2DE2E1FF0C99CD00FEA9E95A /* CAIOSurfaceCodingProxy.h in Headers */,
+				2DE2E0F3CCEFAF2DC15266CB /* CAMediaTiming-Protocol.h in Headers */,
+				2DE2E8FA96EBA0657B24E718 /* CAMutableMeshTransform.h in Headers */,
+				2DE2E12662EDB71F5411B800 /* CAPresentationModifier.h in Headers */,
+				2DE2EF7D0B556935DB93339E /* CARenderValue-Protocol.h in Headers */,
+				2DE2E7CB44225E37938FC06E /* CAStateControllerLayer.h in Headers */,
+				2DE2E662E767624A4D9CF561 /* CAStateRemoveAnimation.h in Headers */,
+				2DE2EB71AC1C5C459E5EEC20 /* NSNumber-CARenderValue.h in Headers */,
+				2DE2E93BAB0648D873244E29 /* NSObject-CARenderValue.h in Headers */,
+				2DE2E36A0A9AE0B6653C5B67 /* CAPropertyInfo-Protocol.h in Headers */,
+				2DE2E798729B38BD49AD35E5 /* NSDictionary-CAMLWriter.h in Headers */,
+				2DE2EA58EBC96E7C77669E9B /* NSSecureCoding-Protocol.h in Headers */,
+				2DE2E3CF52ECCCF50BCAB113 /* CAStateRecorder-Protocol.h in Headers */,
+				2DE2EB9E05C8E9874EFA7A1C /* CAStateTransitionElement.h in Headers */,
+				2DE2E992B68A0F2BFCDEFB69 /* NSCoder-CACoderAdditions.h in Headers */,
+				2DE2E3488563D679FAF94633 /* NSNull-CAActionAdditions.h in Headers */,
+				2DE2EF32C1C5028BFABDDD74 /* LKNSDictionaryCodingProxy.h in Headers */,
+				2DE2E1AFBD650B92718A14AF /* NSArray-CAAnimatableValue.h in Headers */,
+				2DE2E6631100ABFD92AB758C /* NSMutableCopying-Protocol.h in Headers */,
+				2DE2E247058BEC6B4F337313 /* NSValue-CAAnimatableValue.h in Headers */,
+				2DE2E02CDF858A75BCC86918 /* CAAnimatableValue-Protocol.h in Headers */,
+				2DE2EB90170EBC354B5097F6 /* CACodingCAMLWriterDelegate.h in Headers */,
+				2DE2EFD6B6291ABC9F7E9765 /* CAStateControllerAnimation.h in Headers */,
+				2DE2E66E8812212AAFE07F3C /* NSDictionary-CARenderValue.h in Headers */,
+				2DE2ED52951B5671BD35E9B3 /* NSNumber-CAAnimatableValue.h in Headers */,
+				2DE2E6183F2CCE5F9211A7E7 /* NSObject-_CAObjectInternal.h in Headers */,
+				2DE2EE8841D52F6A86A33A9D /* NSObject-CAAnimatableValue.h in Headers */,
+				2DE2E638FA0552C89D1C1050 /* NSValue-CAPoint3DAdditions.h in Headers */,
+				2DE2EF1A30FB724EEC9F6E32 /* CADebuggingArchiverDelegate.h in Headers */,
+				2DE2E677B9CC2B4DC628AD2C /* CAMLWriterDelegate-Protocol.h in Headers */,
+				2DE2E35FFBB2AD64BA8F93B8 /* CAPresentationModifierGroup.h in Headers */,
+				2DE2EE8EBE6528E8188EF6E1 /* CAStateControllerTransition.h in Headers */,
+				2DE2E73A31EED93A22FB81D9 /* CATransactionCompletionItem.h in Headers */,
+				2DE2E02E7624131D394F5899 /* CAAnimationDelegate-Protocol.h in Headers */,
+				2DE2E5319AF31BFE088B266C /* CAMediaTimingFunctionBuiltin.h in Headers */,
+				2DE2E1B7C7C4FD27EA8404B6 /* NSAffineTransform-CAMLWriter.h in Headers */,
+				2DE2ECB346DBE03F7FEE6CD1 /* NSValue-CAColorMatrixAdditions.h in Headers */,
+				2DE2EC9A8135AA6077F733E7 /* NSValue-CATransform3DAdditions.h in Headers */,
+				2DE2E8B70C2A731F5A66F38E /* NSAffineTransform-CARenderValue.h in Headers */,
+				2DE2E79DFBEC205B5A2C7E58 /* NSKeyedArchiverDelegate-Protocol.h in Headers */,
+				2DE2E29467FFBD86DF690A67 /* NSAffineTransform-CAAnimatableValue.h in Headers */,
+				2DE2EB987EC0F4BE6AE44CDE /* CALayer.h in Headers */,
+				2DE2EDB27D63108ABF7EE8E1 /* CATransaction.h in Headers */,
+				2DE2E7FC72C721DD4DF95EB1 /* CA.h in Headers */,
+				2DE2E60C36007555BB7279E1 /* Test.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE30AD8B1FDD149B006AA26D /* QuartzCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE30ADA01FDD149B006AA26D /* Build configuration list for PBXNativeTarget "QuartzCore" */;
+			buildPhases = (
+				CE30AD871FDD149B006AA26D /* Sources */,
+				CE30AD881FDD149B006AA26D /* Frameworks */,
+				CE30AD891FDD149B006AA26D /* Headers */,
+				CE30AD8A1FDD149B006AA26D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuartzCore;
+			productName = QuartzCore;
+			productReference = CE30AD8C1FDD149B006AA26D /* QuartzCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE30AD941FDD149B006AA26D /* QuartzCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE30ADA31FDD149B006AA26D /* Build configuration list for PBXNativeTarget "QuartzCoreTests" */;
+			buildPhases = (
+				CE30AD911FDD149B006AA26D /* Sources */,
+				CE30AD921FDD149B006AA26D /* Frameworks */,
+				CE30AD931FDD149B006AA26D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE30AD981FDD149B006AA26D /* PBXTargetDependency */,
+			);
+			name = QuartzCoreTests;
+			productName = QuartzCoreTests;
+			productReference = CE30AD951FDD149B006AA26D /* QuartzCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE30AD831FDD149B006AA26D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Away;
+				TargetAttributes = {
+					CE30AD8B1FDD149B006AA26D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					CE30AD941FDD149B006AA26D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CE30AD861FDD149B006AA26D /* Build configuration list for PBXProject "QuartzCore" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE30AD821FDD149B006AA26D;
+			productRefGroup = CE30AD8D1FDD149B006AA26D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE30AD8B1FDD149B006AA26D /* QuartzCore */,
+				CE30AD941FDD149B006AA26D /* QuartzCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE30AD8A1FDD149B006AA26D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE30AD931FDD149B006AA26D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE30AD871FDD149B006AA26D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE2E61953C05FA4D5D37C5E /* CALayer.mm in Sources */,
+				2DE2EA79444147D74C459D10 /* CATransaction.mm in Sources */,
+				2DE2E809111CA97238072037 /* CA.mm in Sources */,
+				2DE2E489ECC3C46D84CFAD69 /* Test.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE30AD911FDD149B006AA26D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE30AD9B1FDD149B006AA26D /* QuartzCoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE30AD981FDD149B006AA26D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE30AD8B1FDD149B006AA26D /* QuartzCore */;
+			targetProxy = CE30AD971FDD149B006AA26D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE30AD9E1FDD149B006AA26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE30AD9F1FDD149B006AA26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE30ADA11FDD149B006AA26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuartzCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.away.QuartzCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE30ADA21FDD149B006AA26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuartzCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.away.QuartzCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE30ADA41FDD149B006AA26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuartzCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.away.QuartzCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE30ADA51FDD149B006AA26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuartzCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.away.QuartzCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE30AD861FDD149B006AA26D /* Build configuration list for PBXProject "QuartzCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE30AD9E1FDD149B006AA26D /* Debug */,
+				CE30AD9F1FDD149B006AA26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE30ADA01FDD149B006AA26D /* Build configuration list for PBXNativeTarget "QuartzCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE30ADA11FDD149B006AA26D /* Debug */,
+				CE30ADA21FDD149B006AA26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE30ADA31FDD149B006AA26D /* Build configuration list for PBXNativeTarget "QuartzCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE30ADA41FDD149B006AA26D /* Debug */,
+				CE30ADA51FDD149B006AA26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE30AD831FDD149B006AA26D /* Project object */;
+}
