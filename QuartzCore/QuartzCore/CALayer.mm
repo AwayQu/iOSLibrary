@@ -353,43 +353,41 @@ static BOOL _CAObject_automaticallyNotifiesObserversForKey(int arg0, int arg1) {
 }
 
 - (void)_colorSpaceDidChange {
-    rbx = self->_attr.layer;
-    r15 = CA::Transaction::ensure_compat();
-    var_30 = rbx;
-    r12 = *(rbx + 0x10);
-    rax = *(int32_t *) (r15 + 0x20);
-    *(int32_t *) (r15 + 0x20) = rax + 0x1;
-    if (rax == 0x0) {
-        os_unfair_lock_lock(*(r15 + 0x18));
+    CA::Layer *layer = static_cast<CA::Layer *>(self->_attr.layer);
+    CA::Transaction *transaction = CA::Transaction::ensure_compat();
+    int32_t value0x20 = *transaction->value0x20;
+    *transaction->value0x20 += 1;
+    if (value0x20 == 0x0) {
+        os_unfair_lock_lock(transaction->value0x18);
     }
-    rbx = [r12 contents];
+    id contents = [layer->layer0x10 contents];
     r14 = 0x0;
-    if (rbx != 0x0) {
-        r13 = CFGetTypeID(rbx);
+    if (contents) {
+        CFTypeID typeID = CFGetTypeID(contents);
         rax = *CABackingStoreGetTypeID::type;
         if (rax == 0x0) {
             rax = _CFRuntimeRegisterClass(CABackingStoreGetTypeID::klass);
             *CABackingStoreGetTypeID::type = rax;
         }
         r14 = 0x1;
-        if (r13 == rax) {
-            r13 = [*(var_30 + 0x10) _retainColorSpace];
-            if (_CABackingStoreSetColorSpace(rbx, r13) != 0x0) {
-                [r12 setNeedsDisplay];
+        if (typeID == rax) {
+            CGColorSpace *colorSpace = [layer->layer0x10 _retainColorSpace];
+            if (_CABackingStoreSetColorSpace(contents, colorSpace) != 0x0) {
+                [layer->layer0x10 setNeedsDisplay];
             }
-            CGColorSpaceRelease(r13);
+            CGColorSpaceRelease(colorSpace);
             r14 = 0x0;
         }
     }
-    if ((([r12 backgroundColor] != 0x0) || ([r12 borderColor] != 0x0)) || ([r12 contentsMultiplyColor] != 0x0)) {
+    if ((([layer->layer0x10 backgroundColor] != 0x0) || ([layer->layer0x10 borderColor] != 0x0)) || ([layer->layer0x10 contentsMultiplyColor] != 0x0)) {
         r14 = r14 | 0x8000;
     }
     rdx = r14 | 0x2000;
-    if ([r12 shadowColor] == 0x0) {
+    if ([layer->layer0x10 shadowColor] == 0x0) {
         rdx = r14;
     }
     if (rdx != 0x0) {
-        CA::Layer::set_commit_needed(var_30, r15);
+        CA::Layer::set_commit_needed(layer, r15);
     }
     CA::Transaction::unlock();
     return;

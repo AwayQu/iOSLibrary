@@ -1,11 +1,15 @@
 #import <dispatch/once.h>
 #import <cstdint>
 
+@class CALayer;
+
 namespace CA {
 
 
     class Transaction {
     public:
+        int16_t value0x18;
+        int32_t *value0x20;
         static Transaction *create();
 
         static Transaction *ensure();
@@ -31,12 +35,12 @@ namespace CA {
 
     class Layer {
     public:
-        int32_t a; // 0x0
-        int32_t b; // flag
-        int16_t c; // 0x0
-        void *layer; // CALayer *
-        int16_t d; // 0x0
-        int32_t e; // start 0x20
+        int32_t a0x0; // 0x0
+        int32_t b0x4; // flag
+        int16_t c0x8; // 0x0
+        CALayer *layer0x10; // CALayer *
+        int16_t d0x18; // 0x0
+        int32_t e0x20; // start 0x20
         int8_t *value0x2e;
 //        rbx = malloc_zone_malloc(_get_malloc_zone(0x118, @selector(class)), 0x118);
 //        *(rbx + 0x8) = 0x0;
