@@ -361,7 +361,7 @@ static BOOL _CAObject_automaticallyNotifiesObserversForKey(int arg0, int arg1) {
         os_unfair_lock_lock(transaction->value0x18);
     }
     id contents = [layer->layer0x10 contents];
-    r14 = 0x0;
+    int16_t flag = 0x0;
     if (contents) {
         CFTypeID typeID = CFGetTypeID(contents);
         rax = *CABackingStoreGetTypeID::type;
@@ -369,25 +369,24 @@ static BOOL _CAObject_automaticallyNotifiesObserversForKey(int arg0, int arg1) {
             rax = _CFRuntimeRegisterClass(CABackingStoreGetTypeID::klass);
             *CABackingStoreGetTypeID::type = rax;
         }
-        r14 = 0x1;
+        flag = 0x1;
         if (typeID == rax) {
             CGColorSpace *colorSpace = [layer->layer0x10 _retainColorSpace];
             if (_CABackingStoreSetColorSpace(contents, colorSpace) != 0x0) {
                 [layer->layer0x10 setNeedsDisplay];
             }
             CGColorSpaceRelease(colorSpace);
-            r14 = 0x0;
+            flag = 0x0;
         }
     }
     if ((([layer->layer0x10 backgroundColor] != 0x0) || ([layer->layer0x10 borderColor] != 0x0)) || ([layer->layer0x10 contentsMultiplyColor] != 0x0)) {
-        r14 = r14 | 0x8000;
+        flag = flag | 0x8000;
     }
-    rdx = r14 | 0x2000;
-    if ([layer->layer0x10 shadowColor] == 0x0) {
-        rdx = r14;
+    if ([layer->layer0x10 shadowColor]) {
+        flag = flag | 0x2000;
     }
-    if (rdx != 0x0) {
-        CA::Layer::set_commit_needed(layer, r15);
+    if (flag != 0x0) {
+        CA::Layer::set_commit_needed(layer, transaction);
     }
     CA::Transaction::unlock();
     return;
