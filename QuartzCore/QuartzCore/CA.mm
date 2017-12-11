@@ -399,3 +399,8 @@ int32_t CA::Layer::invalidate_layout() {
     return rax;
 }
 
+int CA::Layer::set_bit(CA::Layer *arg0, unsigned int arg1, unsigned int arg2, bool arg3, void (*arg4)(CA::Transaction *)) {
+    return 0;
+}
+
+

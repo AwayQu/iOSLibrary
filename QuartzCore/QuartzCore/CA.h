@@ -37,7 +37,7 @@ namespace CA {
         void *layer; // CALayer *
         int16_t d; // 0x0
         int32_t e; // start 0x20
-
+        int8_t *value0x2e;
 //        rbx = malloc_zone_malloc(_get_malloc_zone(0x118, @selector(class)), 0x118);
 //        *(rbx + 0x8) = 0x0;
 //        *(rbx + 0x10) = self;
@@ -70,6 +70,7 @@ namespace CA {
         static int32_t layout_if_needed(Transaction *transaction);
         static int32_t thread_flags_(Transaction *transaction);
         static int32_t invalidate_layout();
+        static int set_bit(CA::Layer *arg0, unsigned int arg1, unsigned int arg2, bool arg3, void (CA::Layer::*arg4)(CA::Transaction*) );
     };
 
 
