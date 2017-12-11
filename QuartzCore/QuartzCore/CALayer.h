@@ -9,8 +9,10 @@
 #import "CAMediaTiming.h"
 #import "CAPropertyInfo.h"
 #import "NSSecureCoding.h"
+#import "CDStructures.h"
 
 @class CAMeshTransform, NSArray, NSDictionary, NSString;
+@protocol CAAction;
 
 @interface CALayer : NSObject <CAPropertyInfo, NSSecureCoding, CAMediaTiming>
 {
@@ -25,16 +27,16 @@
     } _attr;
 }
 
-+ (id)defaultActionForKey:(id)arg1;
-+ (_Bool)supportsSecureCoding;
-+ (_Bool)CA_automaticallyNotifiesObservers:(Class)arg1;
-+ (_Bool)automaticallyNotifiesObserversForKey:(id)arg1;
-+ (_Bool)_hasRenderLayerSubclass;
++ (nullable id<CAAction>)defaultActionForKey:(NSString *)event;
+
+
+
+
 + (id)allocWithZone:(struct _NSZone *)arg1;
 + (id)layer;
-+ (_Bool)needsDisplayForKey:(id)arg1;
++ (BOOL)needsDisplayForKey:(id)arg1;
 + (id)defaultValueForKey:(id)arg1;
-+ (void)CAMLParserEndElement:(id)arg1;
+
 + (void)CAMLParserStartElement:(id)arg1;
 + (_Bool)resolveInstanceMethod:(SEL)arg1;
 + (CDUnknownFunctionPointerType)CA_getterForProperty:(const struct _CAPropertyInfo *)arg1;
