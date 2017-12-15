@@ -55,47 +55,62 @@ static BOOL _CAObject_automaticallyNotifiesObserversForKey(int arg0, int arg1) {
 
 
 - (void)layoutSublayers {
-    r14 = self;
+
     if ((*(int8_t *) (self->_attr.layer + 0x35) & 0x30) == 0x0) goto loc_ff4b9;
 
     loc_ff425:
-    rbx = CA::Transaction::ensure();
-    rax = *(int32_t *) (rbx + 0x20);
-    *(int32_t *) (rbx + 0x20) = rax + 0x1;
-    if (rax == 0x0) {
-        os_unfair_lock_lock(*(rbx + 0x18));
+    {
+
+
+    CA::Transaction *transaction = CA::Transaction::ensure();
+    int32_t value0x20 = *transaction->value0x20;
+        *transaction->value0x20 += 1;
+        if (value0x20 == 0x0) {
+            os_unfair_lock_lock(transaction->value0x18);
+        }
+
+        if ((*(((CA::Layer *)(self->_attr.layer))->value0x34) & 0x10) != 0x0) {
+            goto loc_ff45e;
+        }
     }
-    rax = *(r14 + *_OBJC_IVAR_$_CALayer._attr + 0x8);
-    rcx = *(int32_t *) (rax + 0x34);
-    if ((rcx & 0x10) != 0x0) goto loc_ff45e;
+
+
 
     loc_ff450:
-    if ((rcx & 0x20) == 0x0) goto loc_ff4b1;
+    if ((*(((CA::Layer *)(self->_attr.layer))->value0x34) & 0x20) == 0x0) {
+        goto loc_ff4b1;
+    }
 
     loc_ff455:
-    rcx = @selector(_layoutSublayersOfLayer:);
+    SEL rcx = @selector(_layoutSublayersOfLayer:);
     goto loc_ff465;
 
     loc_ff465:
-    r15 = *rcx;
-    if (r15 == 0x0) goto loc_ff4b1;
+    {
+        r15 = *rcx;
+        if (sel == 0x0) goto loc_ff4b1;
+
+    }
+
 
     loc_ff46d:
-    r12 = [*(rax + 0x70) retain];
+    {
+
+    id layerDelegate = [((CA::Layer *)(self->_attr.layer))->value0x70 retain];
     CA::Transaction::unlock();
-    [r12 performSelector:r15 withObject:r14];
-    rdi = r12;
-    [rdi release];
+    [layerDelegate performSelector:r15 withObject:r14];
+    [layerDelegate release];
     return;
+    }
 
     loc_ff4b1:
     CA::Transaction::unlock();
     goto loc_ff4b9;
 
     loc_ff4b9:
-    rax = [r14 actionForKey:@"onLayout"];
+    rax = [self actionForKey:@"onLayout"];
     if (rax != 0x0) {
-        rcx = r14;
+        rcx = self;
         [rax runActionForKey:@"onLayout" object:rcx arguments:0x0];
     }
     return;
@@ -3170,52 +3185,75 @@ static BOOL _CAObject_automaticallyNotifiesObserversForKey(int arg0, int arg1) {
     return;
 }
 
-- (id)actionForKey:(id)arg1 {
-    var_38 = arg2;
-    r12 = self;
-    r15 = CA::Transaction::ensure_compat();
-    rax = *(int32_t *)(r15 + 0x20);
-    *(int32_t *)(r15 + 0x20) = rax + 0x1;
-    if (rax == 0x0) {
-        os_unfair_lock_lock(*(r15 + 0x18));
+- (id)actionForKey:(NSString *)key {
+    CA::Layer *layer = static_cast<CA::Layer *>(self->_attr.layer);
+//    var_38 = key;
+//    r12 = self;
+//    r15 = CA::Transaction::ensure_compat();
+    CA::Transaction *transaction = CA::Transaction::ensure_compat();
+//    rax = *(int32_t *)(r15 + 0x20);
+//    *(int32_t *)(r15 + 0x20) = rax + 0x1;
+    int32_t value0x20 = *transaction->value0x20;
+    *transaction->value0x20 += 1;
+//    if (rax == 0x0) {
+//        os_unfair_lock_lock(*(r15 + 0x18));
+//    }
+    if (value0x20 == 0x0) {
+        os_unfair_lock_lock(transaction->value0x18);
     }
-    r14 = *(r12 + *_OBJC_IVAR_$_CALayer._attr + 0x8);
-    if ((*(int8_t *)(r14 + 0x35) & 0x1) == 0x0) goto loc_fa8b0;
 
+//    r14 = *(r12 + *_OBJC_IVAR_$_CALayer._attr + 0x8);
+//    if ((*(int8_t *)(r14 + 0x35) & 0x1) == 0x0) goto loc_fa8b0;
+    // TODO: exception
+    if ((*(((CA::Layer *)(self->_attr.layer))->value0x35) & 0x10) != 0x0) {
+        goto loc_fa8b0;
+    }
     loc_fa887:
-    rdi = *(r14 + 0x70);
-    if (rdi == 0x0) goto loc_fa8b0;
+//    rdi = *(r14 + 0x70);
+//    if (rdi == 0x0) goto loc_fa8b0;
+    if ((((CA::Layer *)(self->_attr.layer))->value0x70) == nil) goto loc_fa8b0;
 
     loc_fa890:
-    rbx = [rdi actionForLayer:r12 forKey:var_38];
-    if (rbx != 0x0) goto loc_faa13;
+    {
 
+//    rbx = [rdi actionForLayer:r12 forKey:var_38];
+    id caaction = [(((CA::Layer *)(self->_attr.layer))->value0x70) actionForLayer:self forKey:key];
+//    if (rbx != 0x0) goto loc_faa13;
+        if (caaction != 0x0) goto loc_faa13;
+    }
     loc_fa8b0:
-    rax = *(r14 + 0x80);
-    var_30 = r15;
-    if ((rax == 0x0) || (CA::AttrList::get(*rax, 0x1, 0x1) == 0x0)) goto loc_fa8ff;
+    {
+//    rax = *(r14 + 0x80);
+//    var_30 = r15;
+    if ((((CA::Layer *)(self->_attr.layer))->value0x80 == 0x0) || (CA::AttrList::get(((CA::Layer *)(self->_attr.layer))->value0x80, 0x1, 0x1) == 0x0)) goto loc_fa8ff;
+    }
 
     loc_fa8da:
-    rbx = [var_50 objectForKey:var_38];
+    rbx = [var_50 objectForKey:key];
     r15 = var_30;
     if (rbx != 0x0) goto loc_faa13;
 
     loc_fa8ff:
     var_48 = r12;
-    if ((*(int8_t *)(r14 + 0x34) & 0x8) == 0x0) goto loc_fa9be;
+//    if ((*(int8_t *)(r14 + 0x34) & 0x8) == 0x0) goto loc_fa9be;
+    if ((*(((CA::Layer *)(self->_attr.layer))->value0x34) & 0x8) == 0x0) goto loc_fa9be;
 
     loc_fa90e:
-    rax = *(r14 + 0x80);
-    rbx = var_48;
-    if ((rax == 0x0) || (CA::AttrList::get(*rax, 0x1cb, 0x1) == 0x0)) {
-        rax = [rbx class];
-        _CAObject_defaultValueForAtom(rax, 0x1cb, 0x1, var_40);
+//    rax = *(r14 + 0x80);
+//    rbx = var_48;
+//    if ((rax == 0x0) || (CA::AttrList::get(*rax, 0x1cb, 0x1) == 0x0)) {
+    if (((((CA::Layer *)(self->_attr.layer))->value0x80 == 0x0) || (CA::AttrList::get((((CA::Layer *)(self->_attr.layer))->value0x80, 0x1cb, 0x1) == 0x0)) {
+//        rax = [rbx class];
+        Class clazz = [self class];
+//        _CAObject_defaultValueForAtom(rax, 0x1cb, 0x1, var_40);
+        _CAObject_defaultValueForAtom((((CA::Layer *)(self->_attr.layer))->value0x80, 0x1cb, 0x1, var_40);
     }
     rax = var_40;
     if (rax == 0x0) goto loc_fa9be;
 
     loc_fa967:
-    r13 = @selector(objectForKey:);
+//    r13 = @selector(objectForKey:);
+    SEL sel = @selector(objectForKey:);
     r15 = @"actions";
     r14 = @"style";
     goto loc_fa983;
@@ -3232,14 +3270,16 @@ static BOOL _CAObject_automaticallyNotifiesObserversForKey(int arg0, int arg1) {
 
     loc_fa9be:
     r14 = var_48;
-    rbx = [[r14 class] defaultActionForKey:var_38];
+//    rbx = [[r14 class] defaultActionForKey:var_38];
+    id caaction = [[self class] defaultActionForKey:key];
     CA::Transaction::unlock();
-    if (rbx == 0x0) {
-        if ((*(int32_t *)(*(r14 + *_OBJC_IVAR_$_CALayer._attr + 0x8) + 0x4) & 0x40) == 0x0) {
+    if (caaction == 0x0) {
+//        if ((*(int32_t *)(*(r14 + *_OBJC_IVAR_$_CALayer._attr + 0x8) + 0x4) & 0x40) == 0x0) {
+        if ((layer->b0x4 & 0x40) == 0x0) {
             rbx = 0x0;
         }
         else {
-            rbx = [CATransaction _implicitAnimationForLayer:r14 keyPath:var_38];
+            rbx = [CATransaction _implicitAnimationForLayer:self keyPath:key];
         }
     }
     goto loc_faa1b;

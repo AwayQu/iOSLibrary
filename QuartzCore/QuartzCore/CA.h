@@ -1,8 +1,9 @@
 #import <dispatch/once.h>
 #import <cstdint>
+#import <objc/objc.h>
 
 @class CALayer;
-
+@protocol CALayerDelegate;
 namespace CA {
 
 
@@ -42,6 +43,10 @@ namespace CA {
         int16_t d0x18; // 0x0
         int32_t e0x20; // start 0x20
         int8_t *value0x2e;
+        int32_t *value0x34;
+        int8_t *value0x35;
+        id<CALayerDelegate> value0x70;
+        int32_t value0x80;
 //        rbx = malloc_zone_malloc(_get_malloc_zone(0x118, @selector(class)), 0x118);
 //        *(rbx + 0x8) = 0x0;
 //        *(rbx + 0x10) = self;

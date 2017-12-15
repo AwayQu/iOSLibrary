@@ -156,7 +156,7 @@
 
 - (void)addAnimation:(id)arg1 forKey:(id)arg2;
 
-- (id)actionForKey:(id)arg1;
+- (id)actionForKey:(NSString *)key;
 
 - (void)replaceSublayer:(id)arg1 with:(id)arg2;
 
