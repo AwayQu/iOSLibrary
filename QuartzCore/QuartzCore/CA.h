@@ -11,13 +11,14 @@ namespace CA {
     public:
         int16_t value0x18;
         int32_t *value0x20;
+
         static Transaction *create();
 
         static Transaction *ensure();
 
         static Transaction *ensure_compat();
 
-        static int commit_transaction();
+        static int commit_transaction(CA::Transaction *transaction);
 
         static int flush_transaction();
 
@@ -34,6 +35,10 @@ namespace CA {
         static dispatch_once_t *memory_once;
     };
 
+    class Context {
+
+    };
+
     class Layer {
     public:
         int32_t a0x0; // 0x0
@@ -45,7 +50,7 @@ namespace CA {
         int8_t *value0x2e;
         int32_t *value0x34;
         int8_t *value0x35;
-        id<CALayerDelegate> value0x70;
+        id <CALayerDelegate> value0x70;
         int32_t value0x80;
 //        rbx = malloc_zone_malloc(_get_malloc_zone(0x118, @selector(class)), 0x118);
 //        *(rbx + 0x8) = 0x0;
@@ -77,9 +82,12 @@ namespace CA {
 
         static int32_t *class_state(void *); // objc_class *
         static int32_t layout_if_needed(Transaction *transaction);
+
         static int32_t thread_flags_(Transaction *transaction);
+
         static int32_t invalidate_layout();
-        static int set_bit(CA::Layer *arg0, unsigned int arg1, unsigned int arg2, bool arg3, void (CA::Layer::*arg4)(CA::Transaction*) );
+
+        static int set_bit(CA::Layer *arg0, unsigned int arg1, unsigned int arg2, bool arg3, void (CA::Layer::*arg4)(CA::Transaction *));
     };
 
 
