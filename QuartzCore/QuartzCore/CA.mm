@@ -145,7 +145,7 @@ int CA::Transaction::ensure_implicit() {
 
 int CA::Transaction::commit_transaction(CA::Transaction *transaction) {
     var_30 = *___stack_chk_guard;
-    *(var_1188 + 0xfffffffffffffff0) = transaction;
+//    *(var_1188 + 0xfffffffffffffff0) = transaction;
     *var_1200 = 0x10;
     var_11B0 = 0x10;
     r15 = CA::Context::retain_all_contexts(0x1, var_10B0, var_1200);
