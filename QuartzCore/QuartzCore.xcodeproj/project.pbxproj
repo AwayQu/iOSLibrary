@@ -43,6 +43,7 @@
 		2DE2E02413B356CF460E6286 /* NSAttributedString-UILabelAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA3932BA8670F77481EC /* NSAttributedString-UILabelAdditions.h */; };
 		2DE2E0246FF834E2CFB675E4 /* _UIPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E2C6DEC1A7EFA60BD7AD /* _UIPopoverView.h */; };
 		2DE2E024DBDBEF49D37CA007 /* UIViewControllerPreviewing_Private-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E433A85245BFECA340CD /* UIViewControllerPreviewing_Private-Protocol.h */; };
+		2DE2E0252166EB467CD73247 /* CADisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E3B24652DD4FE4665A3C /* CADisplayLink.h */; };
 		2DE2E025E08C34AED9FA5F34 /* _UIInterfaceActionItemSeparatorView_CarPlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EC42A0173609045DE426 /* _UIInterfaceActionItemSeparatorView_CarPlay.h */; };
 		2DE2E027354240AE7C3A0AE2 /* _UIStepperButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EE9F4BCD9CA8DC84C3E3 /* _UIStepperButton.h */; };
 		2DE2E02A36FA0EEFE677D985 /* UITextMagnifierCaret.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E41D3859AA8E34B7F352 /* UITextMagnifierCaret.h */; };
@@ -728,6 +729,7 @@
 		2DE2E350FAA42685CF19FF90 /* UIStatusBarIndicatorItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E01E4B6BA0558B346AFF /* UIStatusBarIndicatorItemView.h */; };
 		2DE2E351070839718EB4834F /* UIViewKeyframeAnimationState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EA0F905A2AB4D31C899C /* UIViewKeyframeAnimationState.h */; };
 		2DE2E351713E1EDB56CC9C6E /* _UICubicPolyTangent.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EC16709A4FC0FFAC3643 /* _UICubicPolyTangent.h */; };
+		2DE2E35230BD6D3E5113D69A /* CADisplayLink.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E33ECDAFE8F4D1A95236 /* CADisplayLink.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2DE2E3550D78C1D7FE9A066A /* NSValue-CARenderValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E6DA8DD75C87A2CAEB42 /* NSValue-CARenderValue.h */; };
 		2DE2E35525C84FDBC7413B5A /* UIInputViewControllerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E914ABE608821EB683F4 /* UIInputViewControllerInterface.h */; };
 		2DE2E3573EE413B75AAEC4B9 /* TIKeyboardCandidateResultSet-UIKeyboardCandidateAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E23FF5E71DA2F3A137A9 /* TIKeyboardCandidateResultSet-UIKeyboardCandidateAdditions.h */; };
@@ -2289,7 +2291,7 @@
 		2DE2EA75015BCBAA89384632 /* UIDebuggingColorAuditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EB7C003733D1DB3524BB /* UIDebuggingColorAuditViewController.h */; };
 		2DE2EA7824C85EADC2A77FA6 /* _UISelectionFeedbackGeneratorConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E8F0E3112D5BA20D860B /* _UISelectionFeedbackGeneratorConfiguration.h */; };
 		2DE2EA793C634740BA05EF15 /* _UIAttributeTraitStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E73C9AF385310D86E059 /* _UIAttributeTraitStorage.h */; };
-		2DE2EA79444147D74C459D10 /* CATransaction.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E3BB3B12B48F4472DAC9 /* CATransaction.mm */; };
+		2DE2EA79444147D74C459D10 /* CATransaction.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E3BB3B12B48F4472DAC9 /* CATransaction.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2DE2EA799729DB9FAB450AA4 /* _UIFocusMapSnapshotter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EF542E3A5EC7EEEDC276 /* _UIFocusMapSnapshotter.h */; };
 		2DE2EA7A1DD980FB34E07309 /* UIRemoveControlTextButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2EF643D681AF05E745B08 /* UIRemoveControlTextButton.h */; };
 		2DE2EA7B3AC8064900EC0273 /* UIKBAlertControllerDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE2E6ECAFD0D4590A80D64B /* UIKBAlertControllerDelegate-Protocol.h */; };
@@ -4274,6 +4276,7 @@
 		2DE2E33803128D6E2B210DB6 /* _UIButtonBarSpacerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UIButtonBarSpacerLayout.h; sourceTree = "<group>"; };
 		2DE2E33AE8A2AFCA1513631F /* UIKBSplitKeyplaneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKBSplitKeyplaneGenerator.h; sourceTree = "<group>"; };
 		2DE2E33AF62221BCA13BAE5E /* _UIScreenEdgePanRecognizerEdgeSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UIScreenEdgePanRecognizerEdgeSettings.h; sourceTree = "<group>"; };
+		2DE2E33ECDAFE8F4D1A95236 /* CADisplayLink.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CADisplayLink.mm; sourceTree = "<group>"; };
 		2DE2E33F2A233A84EE6475FC /* NSXPCListenerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXPCListenerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		2DE2E33FDD835B962542173A /* UIScrollViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollViewDelegate-Protocol.h"; sourceTree = "<group>"; };
 		2DE2E3423D941194C8670F5E /* UIFont-SecuredTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont-SecuredTextField.h"; sourceTree = "<group>"; };
@@ -4365,6 +4368,7 @@
 		2DE2E3AFEC2D6803279549FC /* UIPanelBorderReplicatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPanelBorderReplicatingView.h; sourceTree = "<group>"; };
 		2DE2E3B067DA024DE02C2C65 /* _UIImpactFeedbackGeneratorConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UIImpactFeedbackGeneratorConfiguration.h; sourceTree = "<group>"; };
 		2DE2E3B0A57D75C62E90A534 /* UIStatusBarButtonActionItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStatusBarButtonActionItemView.h; sourceTree = "<group>"; };
+		2DE2E3B24652DD4FE4665A3C /* CADisplayLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLink.h; sourceTree = "<group>"; };
 		2DE2E3B2D4A65E911D2E8F65 /* CNContactViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CNContactViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
 		2DE2E3B4FB9D7B97EB8FB741 /* UIKeyboardInput-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKeyboardInput-Protocol.h"; sourceTree = "<group>"; };
 		2DE2E3B57AF5531F09165A54 /* UISpringLoadedGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISpringLoadedGestureRecognizer.h; sourceTree = "<group>"; };
@@ -10678,6 +10682,8 @@
 				2DE2ECF470FDED1C90B0F0C2 /* CA.h */,
 				2DE2E45335F93C552A5DB2A3 /* Test.mm */,
 				2DE2E3A00DB0F636023D36A1 /* Test.h */,
+				2DE2E33ECDAFE8F4D1A95236 /* CADisplayLink.mm */,
+				2DE2E3B24652DD4FE4665A3C /* CADisplayLink.h */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -14221,6 +14227,7 @@
 				2DE2E83314B5DE762552360D /* _UIViewServiceTextEffectsOperator_RemoteViewControllerInterface-Protocol.h in Headers */,
 				2DE2EBF94A945B35FCB86260 /* _UIViewServiceViewControllerOperator_RemoteViewControllerInterface-Protocol.h in Headers */,
 				2DE2E8A4A7346112D75CA394 /* _UIViewServiceImplicitAnimationDecodingProxy_EncodingProxyInterface-Protocol.h in Headers */,
+				2DE2E0252166EB467CD73247 /* CADisplayLink.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -14327,6 +14334,7 @@
 				2DE2E809111CA97238072037 /* CA.mm in Sources */,
 				2DE2E489ECC3C46D84CFAD69 /* Test.mm in Sources */,
 				2DE2E21E3EF8C20720951525 /* README.md in Sources */,
+				2DE2E35230BD6D3E5113D69A /* CADisplayLink.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
