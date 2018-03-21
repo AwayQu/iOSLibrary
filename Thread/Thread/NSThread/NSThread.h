@@ -75,11 +75,23 @@ FOUNDATION_EXPORT NSNotificationName const NSThreadWillExitNotification;
 - (void)performSelectorOnMainThread:(SEL)aSelector withObject:(nullable id)arg waitUntilDone:(BOOL)wait;
 // equivalent to the first method with kCFRunLoopCommonModes
 
+/**
+ * 内部会调用 NSThread _nq:
+ *
+ * thread 运行信息存储格式为 _NSThreadPerformInfo
+ *
+ *
+ */
 - (void)performSelector:(SEL)aSelector onThread:(NSThread *)thr withObject:(nullable id)arg waitUntilDone:(BOOL)wait modes:(nullable NSArray<NSString *> *)array API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 - (void)performSelector:(SEL)aSelector onThread:(NSThread *)thr withObject:(nullable id)arg waitUntilDone:(BOOL)wait API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 // equivalent to the first method with kCFRunLoopCommonModes
 - (void)performSelectorInBackground:(SEL)aSelector withObject:(nullable id)arg API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 
 @end
+
+//TODO: performQ
+//       performD
+
+
 
 NS_ASSUME_NONNULL_END

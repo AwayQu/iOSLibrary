@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2DE2E1B2070A81D4153DFBD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2EE08D0736911D1A39E25 /* Main.storyboard */; };
+		2DE2E37F9961D0B686C702DE /* NSThread.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E85680D2F2425AD84A2A /* NSThread.mm */; };
 		2DE2E393E386DD690DA08D69 /* ThreadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E54013AAE114148F0439 /* ThreadUITests.m */; };
 		2DE2E3CDA07DE9CC9E870CE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2E4BD56F058E200819A64 /* Assets.xcassets */; };
+		2DE2E8F004CD7383ADF38139 /* NSThreadPrivate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E882970C850A002CC0B3 /* NSThreadPrivate.mm */; };
+		2DE2E923140403822F67CB13 /* NSOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E1E843F68D1BFE11F142 /* NSOperation.mm */; };
 		2DE2E9D41EA571C5A0E4C9D9 /* ThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2EF25BBD3468319633D84 /* ThreadTests.m */; };
 		2DE2E9EE915C6E630B43962F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2EEF5F0D3CDB7B7EB9A1A /* LaunchScreen.storyboard */; };
 		2DE2EBED98092DB874A4AD7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2E4B9439A18E179C81A0A /* AppDelegate.m */; };
@@ -36,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		2DE2E052AE7F2A34D5B242F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DE2E1E843F68D1BFE11F142 /* NSOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSOperation.mm; sourceTree = "<group>"; };
 		2DE2E2C395327FC613E07C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DE2E3730D2FDF4B8B1E8DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DE2E4B9439A18E179C81A0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,10 +49,15 @@
 		2DE2E594DBABD440F9F5119C /* Thread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thread.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE2E60FCF15FD81E9224FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		2DE2E6D0DE255876BFA4DE5F /* ThreadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE2E712C1B04C7C87C75AE3 /* NSThreadPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadPrivate.h; sourceTree = "<group>"; };
+		2DE2E85680D2F2425AD84A2A /* NSThread.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSThread.mm; sourceTree = "<group>"; };
+		2DE2E882970C850A002CC0B3 /* NSThreadPrivate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSThreadPrivate.mm; sourceTree = "<group>"; };
 		2DE2E8CFFA7374E37C7068BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DE2E9DC82FF0DA01087F4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		2DE2EB253EC9B87C01503932 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2DE2EB38BBB8B669FBB37183 /* ThreadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE2ED7B48B8AE1B62CEAFBB /* NSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperation.h; sourceTree = "<group>"; };
+		2DE2ED81FB5CB07E1BE596AD /* NSThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThread.h; sourceTree = "<group>"; };
 		2DE2EE88050B2F2231BFBB6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2DE2EF25BBD3468319633D84 /* ThreadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +109,7 @@
 				2DE2EB253EC9B87C01503932 /* ViewController.h */,
 				2DE2EE88050B2F2231BFBB6E /* ViewController.m */,
 				2DE2E8E1E5E7C69A01B8BCDB /* NSThread */,
+				2DE2EBF5FBE7D065CF5005B7 /* NSOperation */,
 			);
 			path = Thread;
 			sourceTree = "<group>";
@@ -117,6 +127,10 @@
 		2DE2E8E1E5E7C69A01B8BCDB /* NSThread */ = {
 			isa = PBXGroup;
 			children = (
+				2DE2E85680D2F2425AD84A2A /* NSThread.mm */,
+				2DE2ED81FB5CB07E1BE596AD /* NSThread.h */,
+				2DE2E882970C850A002CC0B3 /* NSThreadPrivate.mm */,
+				2DE2E712C1B04C7C87C75AE3 /* NSThreadPrivate.h */,
 			);
 			path = NSThread;
 			sourceTree = "<group>";
@@ -129,6 +143,15 @@
 				2DE2E6D0DE255876BFA4DE5F /* ThreadUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2DE2EBF5FBE7D065CF5005B7 /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				2DE2E1E843F68D1BFE11F142 /* NSOperation.mm */,
+				2DE2ED7B48B8AE1B62CEAFBB /* NSOperation.h */,
+			);
+			path = NSOperation;
 			sourceTree = "<group>";
 		};
 		2DE2EECF8F9D48117D73FE6D /* ThreadTests */ = {
@@ -274,6 +297,9 @@
 				2DE2EEFC5A991A94F8C1BB81 /* main.m in Sources */,
 				2DE2EBED98092DB874A4AD7E /* AppDelegate.m in Sources */,
 				2DE2ECCA088D87BDDF1BA52B /* ViewController.m in Sources */,
+				2DE2E37F9961D0B686C702DE /* NSThread.mm in Sources */,
+				2DE2E923140403822F67CB13 /* NSOperation.mm in Sources */,
+				2DE2E8F004CD7383ADF38139 /* NSThreadPrivate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

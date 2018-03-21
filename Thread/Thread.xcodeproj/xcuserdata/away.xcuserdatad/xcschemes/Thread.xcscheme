@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2DE2EACD2D147D8C0BC248F5"
+               BuildableName = "Thread.app"
+               BlueprintName = "Thread"
+               ReferencedContainer = "container:Thread.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2DE2EACD2D147D8C0BC248F5"
+            BuildableName = "Thread.app"
+            BlueprintName = "Thread"
+            ReferencedContainer = "container:Thread.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
