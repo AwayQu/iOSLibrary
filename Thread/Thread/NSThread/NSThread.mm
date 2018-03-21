@@ -148,8 +148,6 @@
 
 - (void)start {
 
-    r15 = self;
-    rax = self->_private;
     if (self->_private->status >= 0xd) {
 
         @throw [NSException exceptionWithName:@"NSInvalidArgumentException" reason:@"%@: attempt to start the thread again" userInfo:nil];
@@ -165,19 +163,22 @@
                                                                                 object:nil userInfo:nil];
         }
         if (self->_private->qos != 0x0) {
-            rbx = rbx + *_OBJC_IVAR_$__NSThreadData.attr;
-            pthread_attr_set_qos_class_np(rbx);
-            rbx = r15->_private;
+            pthread_attr_set_qos_class_np(self->_private->_attr);
         }
-        r12 = *_OBJC_IVAR_$__NSThreadData.tid + rbx;
-        rbx = rbx + *_OBJC_IVAR_$__NSThreadData.attr;
         /**
          * ___NSThread__start__
-         * 中会获取当前Loop，并且添加一个Source
+         * 1.获取performQ中等待执行的performSelector任务
+         * 2.创建对应的source 立即执行得（input source） 和稍后执行的 （timer source）
+         * 3. wakeUpLoop
+         *
+         * 1.创建AutoReleasePool Push
+         * 2.执行main函数
+         * 3.AutoReleasePool Pop
+         *
          */
-        rbx = pthread_create(r12, rbx, ___NSThread__start__, [r15 retain]);
-        if (rbx != 0x0) {
-            NSLog(@"%@: Thread creation failed with error %d", __NSMethodExceptionProem(r15, var_-48), rbx);
+        int res = pthread_create(self->_private->_tid, self->_private->_attr, ___NSThread__start__, [self retain]);
+        if (res != 0) {
+            NSLog(@"Thread creation failed with error ");
         }
     }
     return;
